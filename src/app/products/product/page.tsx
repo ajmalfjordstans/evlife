@@ -25,7 +25,7 @@ export default function Product() {
           />
           <div className="w-[100%] max-w-[350px] text-left pl-14 mt-3">
             <a href="#">
-              <Typography
+              <Typography placeholder=''
                 variant="h2"
                 color="blue-gray"
                 className="mb-3 font-bold normal-case"
@@ -34,11 +34,11 @@ export default function Product() {
                 {/* PowerPod Home */}
               </Typography>
             </a>
-            <Typography className="mb-4 font-normal !text-gray-500">
+            <Typography placeholder='' className="mb-4 font-normal !text-gray-500">
               {productDetails?.desc}
               {/* 22KW Fast EV Charger */}
             </Typography>
-            <Typography variant="h5" color="red">
+            <Typography placeholder='' variant="h5" color="red">
               {productDetails?.price}
               {/* $550000 */}
             </Typography>

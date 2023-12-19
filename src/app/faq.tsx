@@ -34,10 +34,10 @@ export function Faq() {
     <section className="px-8 py-40">
       <div className="container mx-auto">
         <div className="text-center">
-          <Typography variant="h1" color="blue-gray" className="mb-4">
+          <Typography placeholder='' variant="h1" color="blue-gray" className="mb-4">
             Frequently Asked Questions
           </Typography>
-          <Typography
+          <Typography placeholder=''
             variant="lead"
             className="mx-auto mb-24 w-full max-w-2xl !text-gray-500"
           >
@@ -56,7 +56,7 @@ export function Faq() {
                 {title}
               </AccordionHeader>
               <AccordionBody>
-                <Typography
+                <Typography placeholder=''
                   color="blue-gray"
                   className="font-normal text-gray-500"
                 >

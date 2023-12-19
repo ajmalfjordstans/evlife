@@ -15,10 +15,10 @@ export function FeatureCard({ icon: Icon, title, children }: FeatureCardProps) {
           <div className="mx-auto mb-6 grid h-12 w-12 place-items-center rounded-lg bg-gray-900 p-2.5 text-white shadow">
             <Icon className="h-5 w-5" />
           </div>
-          <Typography variant="h5" color="blue-gray" className="mb-2">
+          <Typography placeholder='' variant="h5" color="blue-gray" className="mb-2">
             {title}
           </Typography>
-          <Typography className="px-8 font-normal !text-gray-500">
+          <Typography placeholder='' className="px-8 font-normal !text-gray-500">
             {children}
           </Typography>
         </CardBody>

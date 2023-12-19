@@ -38,7 +38,7 @@ export default function Partner() {
                 <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
               </CardHeader>
               <CardBody className="relative py-14 px-6 md:px-12">
-                <Typography
+                <Typography placeholder=''
                   variant="h2"
                   color="white"
                   className="mb-6 font-medium leading-[1.5]"
@@ -50,7 +50,7 @@ export default function Partner() {
           </a>
         </div>
         <div className="w-full md:w-[50%]">
-          <Typography
+          <Typography placeholder=''
             variant="h3"
             className="mb-2"
           >

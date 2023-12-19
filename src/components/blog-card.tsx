@@ -33,11 +33,11 @@ export function BlogCard({
         />
       </CardHeader>
       <CardBody className="p-0">
-        <Typography color="blue" className="mb-2 text-xs !font-semibold">
+        <Typography placeholder='' color="blue" className="mb-2 text-xs !font-semibold">
           {date}
         </Typography>
         <a href="#">
-          <Typography
+          <Typography placeholder=''
             variant="h5"
             color="white"
             className="mb-3 font-bold normal-case xl:w-64"
@@ -45,18 +45,18 @@ export function BlogCard({
             {title}
           </Typography>
         </a>
-        <Typography className="mb-4 font-normal !text-white">
+        <Typography placeholder='' className="mb-4 font-normal !text-white">
           {desc}
         </Typography>
         <div className="flex gap-2">
-          {/* <Typography
+          {/* <Typography placeholder=''
             variant="h5"
             color="blue-gray"
             className={offPrice ? "line-through" : ""}
           >
             {price}
           </Typography> */}
-          {/* <Typography variant="h5" color="red">
+          {/* <Typography placeholder='' variant="h5" color="red">
             {price}
           </Typography> */}
         </div>

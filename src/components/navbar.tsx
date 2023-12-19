@@ -46,7 +46,7 @@ interface NavItemProps {
 function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
-      <Typography
+      <Typography placeholder=''
         as="a"
         href={href || "#"}
         target={"_self"}

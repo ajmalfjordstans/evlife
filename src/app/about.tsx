@@ -42,14 +42,14 @@ const About = () => {
   return (
     <section className="container mx-auto px-8 pb-20 pt-20 lg:pt-0">
       <div className="mb-20 mt-10  grid place-items-center text-center">
-        {/* <Typography variant="h2" color="blue-gray" className="my-3">
+        {/* <Typography placeholder='' variant="h2" color="blue-gray" className="my-3">
           MEET POWERPOD
         </Typography> */}
-        <Typography variant="h2" color="blue-gray" className="my-3" placeholder="MEET POWERPOD">
+        <Typography placeholder='' variant="h2" color="blue-gray" className="my-3" >
           MEET POWERPOD
         </Typography>
 
-        <Typography variant="lead" className="!text-gray-500 lg:w-6/12">
+        <Typography placeholder='' variant="lead" className="!text-gray-500 lg:w-6/12">
           We’re passionate about revolutionizing the EV charging experience in India. Our innovative charging solutions are designed to be reliable, durable, and user-friendly, ensuring that EV owners have access to fast and convenient charging wherever they go.
         </Typography>
       </div>
@@ -61,25 +61,25 @@ const About = () => {
         >
           <div className="absolute inset-0 h-full w-full bg-gray-900/75" />
           <CardBody className="relative w-full">
-            <Typography variant="h1" className="mt-9" color="white">
+            <Typography placeholder='' variant="h1" className="mt-9" color="white">
               2
             </Typography>
-            <Typography variant="h4" className="mt-1" color="white">
+            <Typography placeholder='' variant="h4" className="mt-1" color="white">
               Year Warranty
             </Typography>
-            <Typography
+            <Typography placeholder=''
               color="white"
               className="mt-9 mb-14 font-normal opacity-50"
             >
               Designed and Engineered by experts.
             </Typography>
-            <Typography
+            <Typography placeholder=''
               color="white"
               className="mt-4 mb-14 font-normal opacity-50"
             >
               Made with❤️in India
             </Typography>
-            <Typography
+            <Typography placeholder=''
               color="white"
               className="mt-4 mb-14 font-normal opacity-50"
             >

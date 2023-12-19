@@ -43,7 +43,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-blue-gray-50 py-6 md:justify-between">
-          <Typography className="text-center font-normal !text-gray-700">
+          <Typography placeholder='' className="text-center font-normal !text-gray-700">
 
             COPYRIGHT &copy; {CURRENT_YEAR}  {" "}
             <a href="" target="_blank">
@@ -55,7 +55,7 @@ export function Footer() {
           <ul className="flex items-center">
             {SUB_LINKS.map((link, idx) => (
               <li key={link}>
-                <Typography
+                <Typography placeholder=''
                   as="a"
                   href={link.toLowerCase()}
                   className={`py-1 font-normal !text-gray-700 transition-colors hover:!text-gray-900 ${idx === SUB_LINKS.length - 1 ? "pl-2" : "px-2"
@@ -66,7 +66,7 @@ export function Footer() {
               </li>
             ))}
           </ul>
-          <Typography className="text-center font-normal !text-gray-700">
+          <Typography placeholder='' className="text-center font-normal !text-gray-700">
             POWERED BY FJORDSTANS PVT LTD
           </Typography>
         </div>
