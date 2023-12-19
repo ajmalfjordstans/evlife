@@ -54,13 +54,13 @@ export default function Industries({ params }: {
   return (
     <section className="px-8 pt-20 pb-20">
       <div className="container mx-auto md:px-20">
-        <Typography placeholder=''
+        <Typography
           variant="h3"
           className="text-center"
         >
           {products?.title}
         </Typography>
-        <Typography placeholder=''
+        <Typography
           variant="paragraph"
           className="mt-14"
         >

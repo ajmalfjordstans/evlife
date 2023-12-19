@@ -28,10 +28,10 @@ function CategoryCard({ img, bg, title, desc }: CategoryCardProps) {
       />
       <CardBody className="relative flex flex-col justify-between">
         <div className='flex flex-col items-center'>
-          <Typography placeholder='' variant="h5" className="mb-1" color="white">
+          <Typography variant="h5" className="mb-1" color="white">
             {title}
           </Typography>
-          <Typography placeholder='' color="white" className="text-xs font-bold opacity-70 mt-3">
+          <Typography color="white" className="text-xs font-bold opacity-70 mt-3">
             {desc}
           </Typography>
         </div>

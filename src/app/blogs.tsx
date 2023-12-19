@@ -23,7 +23,7 @@ export function Blog() {
   return (
     <section className="px-8 py-28 bg-[#7348A1]">
       <div className="container mx-auto mb-10">
-        <Typography placeholder='' variant="h2" color="white" className="mb-2">
+        <Typography variant="h2" color="white" className="mb-2">
           BLOG
         </Typography>
       </div>

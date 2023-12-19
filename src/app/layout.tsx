@@ -4,6 +4,7 @@ import { Roboto, Montserrat } from "next/font/google";
 import { Footer, Layout, Navbar } from "@/components";
 import { GlobalContextProvider } from "./Context/store";
 import FloatingWhatsapp from "./whatsapp";
+import ScrollAnimation from "@/components/scroll-animation";
 
 
 const roboto = Montserrat({

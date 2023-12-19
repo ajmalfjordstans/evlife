@@ -58,11 +58,11 @@ export function ProductCard({
       </CardHeader>
       <CardBody className="p-0 flex justify-between items-center">
         <div >
-          <Typography placeholder='' color="blue" className="mb-2 text-xs !font-semibold">
+          <Typography color="blue" className="mb-2 text-xs !font-semibold">
             {category}
           </Typography>
           <a href="#">
-            <Typography placeholder=''
+            <Typography
               variant="h5"
               color="blue-gray"
               className="mb-3 font-bold normal-case xl:w-64"
@@ -70,11 +70,11 @@ export function ProductCard({
               {title}
             </Typography>
           </a>
-          <Typography placeholder='' className="mb-4 font-normal !text-gray-500">
+          <Typography className="mb-4 font-normal !text-gray-500">
             {desc}
           </Typography>
           <div className="flex gap-2">
-            <Typography placeholder='' variant="h5" color="red">
+            <Typography variant="h5" color="red">
               {price}
             </Typography>
           </div>

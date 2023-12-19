@@ -10,12 +10,13 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
+import Faq from "./faq";
 
 
 export default function Partner() {
   const [open, setOpen] = useState(1);
 
-  const handleOpen = (value) => setOpen(open === value ? 0 : value);
+  const handleOpen = (value : number) => setOpen(open === value ? 0 : value);
   return (
     <section className="px-8 pt-20">
       <div className="container mx-auto flex justify-center gap-10">
@@ -38,7 +39,7 @@ export default function Partner() {
                 <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
               </CardHeader>
               <CardBody className="relative py-14 px-6 md:px-12">
-                <Typography placeholder=''
+                <Typography
                   variant="h2"
                   color="white"
                   className="mb-6 font-medium leading-[1.5]"
@@ -49,8 +50,9 @@ export default function Partner() {
             </Card>
           </a>
         </div>
-        <div className="w-full md:w-[50%]">
-          <Typography placeholder=''
+        <Faq/>
+        {/* <div className="w-full md:w-[50%]">
+          <Typography
             variant="h3"
             className="mb-2"
           >
@@ -92,7 +94,7 @@ export default function Partner() {
               FAQ Description
             </AccordionBody>
           </Accordion>
-        </div>
+        </div> */}
       </div>
     </section>
   )

@@ -1,7 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import CategoryCard from "@/components/category-card";
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import { Card, CardBody, Typography, Button } from "@material-tailwind/react";
 import {
@@ -39,17 +42,32 @@ const CATEGORIES = [
 ];
 
 const About = () => {
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger)
+  //   gsap.from('.scrollElement', {
+  //     y: 80,
+  //     opacity: 0,
+  //     duration: 0.5,
+  //     scrollTrigger: {
+  //       trigger: '.scrollElement',
+  //       start: "top 50%",
+  //       end: "top 100%",
+  //       toggleActions: "restart none reverse reset ",
+  //       // markers: true
+  //     }
+  //   })
+  // }, [])
   return (
-    <section className="container mx-auto px-8 pb-20 pt-20 lg:pt-0">
+    <section className="container mx-auto px-8 pb-20 pt-20 lg:pt-0 scrollElement">
       <div className="mb-20 mt-10  grid place-items-center text-center">
-        {/* <Typography placeholder='' variant="h2" color="blue-gray" className="my-3">
+        {/* <Typography variant="h2" color="blue-gray" className="my-3">
           MEET POWERPOD
         </Typography> */}
-        <Typography placeholder='' variant="h2" color="blue-gray" className="my-3" >
+        <Typography variant="h2" color="blue-gray" className="my-3" >
           MEET POWERPOD
         </Typography>
 
-        <Typography placeholder='' variant="lead" className="!text-gray-500 lg:w-6/12">
+        <Typography variant="lead" className="!text-gray-500 lg:w-6/12">
           We’re passionate about revolutionizing the EV charging experience in India. Our innovative charging solutions are designed to be reliable, durable, and user-friendly, ensuring that EV owners have access to fast and convenient charging wherever they go.
         </Typography>
       </div>
@@ -61,25 +79,25 @@ const About = () => {
         >
           <div className="absolute inset-0 h-full w-full bg-gray-900/75" />
           <CardBody className="relative w-full">
-            <Typography placeholder='' variant="h1" className="mt-9" color="white">
+            <Typography variant="h1" className="mt-9" color="white">
               2
             </Typography>
-            <Typography placeholder='' variant="h4" className="mt-1" color="white">
+            <Typography variant="h4" className="mt-1" color="white">
               Year Warranty
             </Typography>
-            <Typography placeholder=''
+            <Typography
               color="white"
               className="mt-9 mb-14 font-normal opacity-50"
             >
               Designed and Engineered by experts.
             </Typography>
-            <Typography placeholder=''
+            <Typography
               color="white"
               className="mt-4 mb-14 font-normal opacity-50"
             >
               Made with❤️in India
             </Typography>
-            <Typography placeholder=''
+            <Typography
               color="white"
               className="mt-4 mb-14 font-normal opacity-50"
             >

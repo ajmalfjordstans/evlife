@@ -8,7 +8,7 @@ export default function ContactPage() {
   return (
     <div className="w-full ">
       <div className="flex flex-col items-center mt-[50px]">
-        <Typography placeholder='' variant="h1" color="blue-gray" className="mb-2">
+        <Typography variant="h1" color="blue-gray" className="mb-2">
          Contact Us
         </Typography>
         {/* <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:w-[700px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mt-20">

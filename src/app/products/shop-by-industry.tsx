@@ -30,7 +30,7 @@ export default function IndustryShop() {
   return (
     <section className="px-8 py-20">
       <div className="container mx-auto text-center">
-        <Typography placeholder='' variant="h1" color="blue-gray" className="mb-2">
+        <Typography variant="h1" color="blue-gray" className="mb-2">
           SHOP BY INDUSTRY
         </Typography>
         <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-3 mt-10">
@@ -59,7 +59,7 @@ export default function IndustryShop() {
                     />
                   </CardHeader>
                   <CardBody className="relative py-14 px-6 md:px-12">
-                    <Typography placeholder=''
+                    <Typography
                       variant="h2"
                       color="white"
                       className="mb-6 font-medium text-[32px]"

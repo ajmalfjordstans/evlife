@@ -31,20 +31,8 @@ export function Faq() {
   const handleOpen = (value: number) => setOpen(open === value ? 0 : value);
 
   return (
-    <section className="px-8 py-40">
+    <section className="px-8">
       <div className="container mx-auto">
-        <div className="text-center">
-          <Typography placeholder='' variant="h1" color="blue-gray" className="mb-4">
-            Frequently Asked Questions
-          </Typography>
-          <Typography placeholder=''
-            variant="lead"
-            className="mx-auto mb-24 w-full max-w-2xl !text-gray-500"
-          >
-            The Back-to-School Campaign is a special promotion designed to make
-            your return to school as smooth as possible.
-          </Typography>
-        </div>
         <div className="mx-auto lg:max-w-screen-lg lg:px-20">
           {FAQS.map(({ title, desc }, key) => (
             <Accordion
@@ -56,7 +44,7 @@ export function Faq() {
                 {title}
               </AccordionHeader>
               <AccordionBody>
-                <Typography placeholder=''
+                <Typography
                   color="blue-gray"
                   className="font-normal text-gray-500"
                 >

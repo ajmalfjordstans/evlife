@@ -33,14 +33,14 @@ export function CarouselFeatures() {
   return (
     <div className="px-8 py-40 ">
       <section className="container mx-auto !rounded-lg bg-[#7348A1] bg-center py-10 lg:px-16">
-        <Typography placeholder=''
+        <Typography
           variant="h2"
           color="white"
           className="mb-5 text-xl font-normal text-center"
         >
           ELECTRIC VEHICLES
         </Typography>
-        <Typography placeholder=''
+        <Typography
           variant="lead"
           color="white"
           className="mb-5 text-xl font-normal text-center max-w-[357px] mx-auto"

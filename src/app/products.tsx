@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, {useEffect} from "react";
 import {
   Button,
   Typography,
@@ -10,7 +10,8 @@ import {
 } from "@material-tailwind/react";
 import { ProductCard } from "@/components/product-card";
 import { useGlobalContext } from "./Context/store";
-
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 const Categories = [
   "Home GO",
   "Dual",
@@ -21,13 +22,36 @@ export function Products() {
   const [activeTab, setActiveTab] = React.useState("Home GO");
   const { products } = useGlobalContext()
 
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger)
+  //   gsap.fromTo(
+  //     '.scrollElement',
+  //     {
+  //       opacity: 0,
+  //       y: 100,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       y: 0,
+  //       duration: 1,
+  //       ease: 'power1.in',
+  //       scrollTrigger: {
+  //         trigger: '.scrollElement',
+  //         start: '20px 50%',
+  //         end: '+=3000',
+  //         toggleActions: 'restart none none reverse',
+  //         markers: true,
+  //       },
+  //     }
+  //   );
+  // }, [])
   return (
     <section className="px-8 pt-20 pb-20">
-      <div className="container mx-auto mb-20 text-center">
-        <Typography placeholder='' variant="h1" color="blue-gray" className="mb-2">
+      <div className="container mx-auto mb-20 text-center ">
+        <Typography variant="h1" color="blue-gray" className="mb-2">
           Our Products
         </Typography>
-        <Typography placeholder=''
+        <Typography
           variant="lead"
           className="mx-auto w-full px-4 !text-gray-500 lg:w-9/12"
         >
