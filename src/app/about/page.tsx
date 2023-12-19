@@ -29,7 +29,7 @@ export default function AboutPage() {
             variant="paragraph"
             className="mt-3"
           >
-            Along with Riod, our experienced and dedicated team  is passionate about revolutionizing the EV charging experience in India. Our innovative charging solutions are designed to be reliable, durable, and user-friendly, ensuring that EV owners have access to fast and convenient charging wherever they go.
+            <p>Along with Riod, our experienced and dedicated team  is passionate about revolutionizing the EV charging experience in India. Our innovative charging solutions are designed to be reliable, durable, and user-friendly, ensuring that EV owners have access to fast and convenient charging wherever they go.</p>
           </Typography>
         </div>
         <div className="grid grid-cols-3 mt-20 gap-10">
