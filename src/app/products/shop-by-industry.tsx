@@ -10,24 +10,19 @@ import Image from "next/image";
 
 const INDUSTRIES = [
   {
-    name: "Agriculture Technologies - RIOD INDIA",
+    name: "Parking Space",
     image: "/image/ev/agriculture.jpg",
-    url: "/products/agriculture/"
+    url: "/products/parkingspace/"
   },
   {
-    name: "Energy Solutions",
+    name: "Apartments & Home",
     image: "/image/ev/energy.jpg",
-    url: "/products/energy-solutions/"
+    url: "/products/apartments&home/"
   },
   {
-    name: "EV Charging Solutions RIOD INDIA",
+    name: "Workplace",
     image: "/image/ev/charging.jpg",
-    url: "/products/ev-charging/"
-  },
-  {
-    name: "Industries 4.0",
-    image: "/image/ev/industries.jpg",
-    url: "/products/industries/"
+    url: "/products/workplace/"
   },
 ]
 
@@ -38,8 +33,9 @@ export default function IndustryShop() {
         <Typography variant="h1" color="blue-gray" className="mb-2">
           SHOP BY INDUSTRY
         </Typography>
-        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-10">
+        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-3 mt-10">
           {INDUSTRIES.map((industry, id) => {
+            console.log(industry);
             return (
               <a href={industry.url} key={id}>
                 <Card

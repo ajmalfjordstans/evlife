@@ -7,7 +7,7 @@ export default function ContactUs() {
     <div className='bg-[#7348A1] mt-[60px]'>
       <div className='w-[100%] max-w-[1440px] mx-auto px-[6%] text-white py-[80px]' id='contact'>
         <div className='max-w-[853px] flex flex-col items-center mx-auto'>
-          <p className='text-[22px] tracking-[0.99px] leading-[27px] my-[20px]'>Please contact us below </p>
+          {/* <p className='text-[22px] tracking-[0.99px] leading-[27px] my-[20px]'>Please contact us below </p> */}
           <ContactForm/>
         </div>
         <div className='flex flex-col items-center'>

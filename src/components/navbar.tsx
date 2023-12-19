@@ -77,11 +77,14 @@ export function Navbar() {
   return (
     <MTNavbar shadow={true} fullWidth className="border-0 sticky top-0 z-50 ">
 
-      <div className="bg-[#7348A1] absolute top-0 left-0 w-full flex justify-evenly py-[3px] text-[11px] md:text-[14px] ">
+      <div className="bg-[#7348A1] absolute top-0 left-0 w-full flex justify-evenly items-center py-[3px] text-[11px] md:text-[14px] ">
         <span>GET 10% OFF THIS MONTH WHEN YOU TRY OUR SERVICES!</span>
-        <span><a href='tel:+917736677477' className='hover:cursor-pointer'>Call Us</a></span>
+        <span
+          className="hover:cursor-pointer px-4 py-1 bg-white rounded-md text-black my-2"
+        ><a href='tel:+917736677477' className='hover:cursor-pointer'>+917736677477</a>
+        </span>
       </div>
-      <div className="container mx-auto flex items-center justify-between mt-[15px] max-h-[40px]">
+      <div className="container mx-auto flex items-center justify-between mt-[36px] max-h-[40px]">
         <a href="/" className="cursor-pointer">
           <Image
             src="/logos/logo-ev-life.png"

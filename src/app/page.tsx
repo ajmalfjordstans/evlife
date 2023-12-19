@@ -13,7 +13,7 @@ import Partner from "./partner";
 
 export default function Campaign() {
   return (
-    <>
+    <div className="bg-blue-gray-100">
       <Hero />
       <About/>
       <Products/>
@@ -22,6 +22,6 @@ export default function Campaign() {
       <CarouselFeatures />
       {/* <GetYourBookFromUs /> */}
       {/* <Faq /> */}
-    </>
+    </div>
   );
 }

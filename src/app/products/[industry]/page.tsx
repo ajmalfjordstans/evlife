@@ -28,27 +28,26 @@ export default function Industries({ params }: {
 
   let products
 
-  const categories: Record<string, string> = {
-    agriculture: "agriculture",
-    energy_solutions: "energy-solutions",
-    ev_charging: "ev-charging",
-    industries: "industries"
-  }
+  // const categories: Record<string, string> = {
+  //   agriculture: "agriculture",
+  //   energy_solutions: "energy-solutions",
+  //   ev_charging: "ev-charging",
+  //   industries: "industries"
+  // }
 
-  const findCategoryKey = (value: string): string | undefined => {
-    return Object.keys(categories).find((key) => categories[key] === value);
-  };
-  const categoryKey = findCategoryKey(params.industry);
-  if (categoryKey === 'agriculture') {
-    products = INDUSTRY_CATEGORIES.agriculture
-  } else if (categoryKey === 'energy_solutions') {
-    products = INDUSTRY_CATEGORIES.energy_solutions
-  } else if (categoryKey === 'ev_charging') {
-    products = INDUSTRY_CATEGORIES.ev_charging
-  } else if (categoryKey === 'industries') {
-    products = INDUSTRY_CATEGORIES.industries
+  // const findCategoryKey = (value: string): string | undefined => {
+  //   return Object.keys(categories).find((key) => categories[key] === value);
+  // };
+  // const categoryKey = findCategoryKey(params.industry);
+  const categoryKey = params.industry;
+  if (categoryKey === 'parkingspace') {
+    products = INDUSTRY_CATEGORIES.parkingspace
+  } else if (categoryKey === 'apartmentandhome') {
+    products = INDUSTRY_CATEGORIES.apartmentandhome
+  } else if (categoryKey === 'workplace') {
+    products = INDUSTRY_CATEGORIES.workplace
   }
-  // console.log(products as Category);
+  console.log(products as Category);
   // console.log(INDUSTRY_CATEGORIES);
   // console.log(INDUSTRY_CATEGORIES.energy_solutions);
 

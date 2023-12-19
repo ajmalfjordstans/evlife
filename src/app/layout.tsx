@@ -1,11 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Roboto, Montserrat } from "next/font/google";
 import { Footer, Layout, Navbar } from "@/components";
 import { GlobalContextProvider } from "./Context/store";
+import FloatingWhatsapp from "./whatsapp";
 
 
-const roboto = Roboto({
+const roboto = Montserrat({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700", "900"],
   display: "swap",
@@ -34,11 +35,12 @@ export default function RootLayout({
       </head>
       <body className={roboto.className}>
         <GlobalContextProvider>
-        <Layout>
-          <Navbar />
-          {children}
-          <Footer />
-        </Layout>
+          <Layout>
+            <Navbar />
+            {children}
+            <Footer />
+            <FloatingWhatsapp />
+          </Layout>
         </GlobalContextProvider>
       </body >
     </html >

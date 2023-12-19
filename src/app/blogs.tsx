@@ -27,7 +27,7 @@ export function Blog() {
           BLOG
         </Typography>
       </div>
-      <div className="container mx-auto grid grid-cols-1 items-start gap-x-6 gap-y-20 md:grid-cols-2 ">
+      <div className="container mx-auto grid grid-cols-1 items-start gap-x-6 gap-y-20 md:grid-cols-3 ">
         {BLOGS.map((props, key) => (
           <BlogCard key={key} {...props}/>
         ))}
