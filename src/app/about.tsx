@@ -42,28 +42,28 @@ const CATEGORIES = [
 ];
 
 const About = () => {
-  // useEffect(() => {
-  //   gsap.registerPlugin(ScrollTrigger)
-  //   gsap.from('.scrollElement', {
-  //     y: 80,
-  //     opacity: 0,
-  //     duration: 0.5,
-  //     scrollTrigger: {
-  //       trigger: '.scrollElement',
-  //       start: "top 50%",
-  //       end: "top 100%",
-  //       toggleActions: "restart none reverse reset ",
-  //       // markers: true
-  //     }
-  //   })
-  // }, [])
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.from('.scrollElement', {
+      // y: 80,
+      // opacity: 0,
+      // duration: 0.5,
+      // scrollTrigger: {
+      //   trigger: '.scrollElement',
+      //   start: "top 50%",
+      //   end: "top 100%",
+      //   toggleActions: "restart none reverse reset ",
+      //   // markers: true
+      // }
+    })
+  }, [])
   return (
     <section className="container mx-auto px-8 pb-20 pt-20 lg:pt-0 scrollElement">
       <div className="mb-20 mt-10  grid place-items-center text-center">
         {/* <Typography variant="h2" color="blue-gray" className="my-3">
           MEET POWERPOD
         </Typography> */}
-        <Typography variant="h2" color="blue-gray" className="my-3" >
+        <Typography variant="h2" color="blue-gray" className="my-3">
           MEET POWERPOD
         </Typography>
 
