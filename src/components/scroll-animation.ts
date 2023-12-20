@@ -17,7 +17,7 @@ const applyScrollAnimation = (scroll: string, trigger: string) => {
       end: "top 100%",
       // toggleActions: "restart none reverse reset",
       toggleActions: "restart none reverse none",
-      markers: true,
+      // markers: true,
     },
   });
 };
