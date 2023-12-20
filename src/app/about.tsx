@@ -62,10 +62,10 @@ const About = () => {
       <div className="mb-20 mt-10  grid place-items-center text-center">
         {/* <Typography variant="h2" color="blue-gray" className="my-3">
           MEET POWERPOD
-        </Typography> */}
-        <Typography variant="lead" className="!text-gray-500 lg:w-6/12">
-          We&aposre passionate about revolutionizing the EV charging experience in India. Our innovative charging solutions are designed to be reliable, durable, and user-friendly, ensuring that EV owners have access to fast and convenient charging wherever they go.
         </Typography>
+        <Typography variant="lead" className="!text-gray-500 lg:w-6/12">
+          We are passionate about revolutionizing the EV charging experience in India. Our innovative charging solutions are designed to be reliable, durable, and user-friendly, ensuring that EV owners have access to fast and convenient charging wherever they go.
+        </Typography> */}
       </div>
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <Card
