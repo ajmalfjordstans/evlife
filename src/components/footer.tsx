@@ -12,11 +12,11 @@ export function Footer() {
   return (
     <footer className="mt-10 px-8 pt-10">
       <div className="container mx-auto">
-        <div className="flex justify-between items-center md:gap-10 gap-4">
+        <div className="flex justify-between items-center md:gap-10 gap-4 flex-wrap lg:flex-nowrap" >
           <Image
             src='/logos/evblack.png'
             alt="ev"
-            className="h-32 w-44 hover:cursor-pointer"
+            className="h-32 w-44 hover:cursor-pointer mx-auto"
             height={768}
             width={768}
           />
@@ -48,7 +48,7 @@ export function Footer() {
               </Typography>
             </Link>
           </div>
-          <div className="w-[400px]">
+          <div className="md:w-[400px]">
             <Typography
               variant="h4"
             >

@@ -19,7 +19,7 @@ export default function Partner() {
   const handleOpen = (value : number) => setOpen(open === value ? 0 : value);
   return (
     <section className="px-8 pt-20">
-      <div className="container mx-auto flex justify-center gap-10">
+      <div className="container mx-auto flex justify-center gap-10 flex-col">
         <div>
           <div>
 
@@ -27,7 +27,7 @@ export default function Partner() {
           <a href="/partner">
             <Card
               shadow={false}
-              className="relative grid h-[25rem] w-full max-w-[28rem] items-end justify-center overflow-hidden text-center hover:cursor-pointer"
+              className="relative grid h-[25rem] w-full max-w-[28rem] items-end justify-center overflow-hidden text-center hover:cursor-pointer mx-auto"
             >
               <CardHeader
                 floated={false}
