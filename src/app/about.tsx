@@ -68,7 +68,7 @@ const About = () => {
         </Typography> */}
       </div>
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <Card
+        {/* <Card
           color="blue"
           className="relative grid h-full w-full place-items-center overflow-hidden text-center"
           style={{ position: "relative", backgroundImage: "url('image/ev/warranty.jpg')", backgroundSize: "cover" }}
@@ -100,7 +100,7 @@ const About = () => {
               Authorized distributor of  RIOD
             </Typography>
           </CardBody>
-        </Card>
+        </Card> */}
         <div className="col-span-1 flex flex-col gap-6">
           {CATEGORIES.slice(0, 2).map((props, key) => (
             <CategoryCard key={key} {...props} />
