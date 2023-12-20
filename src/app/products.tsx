@@ -1,6 +1,6 @@
 "use client";
 
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import {
   Button,
   Typography,
@@ -10,8 +10,7 @@ import {
 } from "@material-tailwind/react";
 import { ProductCard } from "@/components/product-card";
 import { useGlobalContext } from "./Context/store";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import applyScrollAnimation from "@/components/scroll-animation";
 const Categories = [
   "Home GO",
   "Dual",
@@ -22,32 +21,13 @@ export function Products() {
   const [activeTab, setActiveTab] = React.useState("Home GO");
   const { products } = useGlobalContext()
 
-  // useEffect(() => {
-  //   gsap.registerPlugin(ScrollTrigger)
-  //   gsap.fromTo(
-  //     '.scrollElement',
-  //     {
-  //       opacity: 0,
-  //       y: 100,
-  //     },
-  //     {
-  //       opacity: 1,
-  //       y: 0,
-  //       duration: 1,
-  //       ease: 'power1.in',
-  //       scrollTrigger: {
-  //         trigger: '.scrollElement',
-  //         start: '20px 50%',
-  //         end: '+=3000',
-  //         toggleActions: 'restart none none reverse',
-  //         markers: true,
-  //       },
-  //     }
-  //   );
-  // }, [])
+  useEffect(() => {
+    applyScrollAnimation(".scrollAnimate", ".scrollAnimate")
+    applyScrollAnimation(".scrollAnimate2", ".scrollAnimate2")
+  }, [])
   return (
     <section className="px-8 pt-20 pb-20">
-      <div className="container mx-auto mb-20 text-center ">
+      <div className="container mx-auto mb-20 text-center scrollAnimate">
         <Typography variant="h1" color="blue-gray" className="mb-2">
           Our Products
         </Typography>
@@ -81,7 +61,7 @@ export function Products() {
           </Tabs>
         </div>
       </div>
-      <div className="container mx-auto grid grid-cols-1 items-start gap-x-6 gap-y-20 md:grid-cols-2 xl:grid-cols-3">
+      <div className="container mx-auto grid grid-cols-1 items-start gap-x-6 gap-y-20 md:grid-cols-2 xl:grid-cols-3 scrollAnimate2">
         {products.map((props, key) => (
           <ProductCard key={key} {...props} activeTab={activeTab} />
         ))}

@@ -32,7 +32,7 @@ export function Faq() {
 
   return (
     <section className="px-8">
-      <div className="container mx-auto">
+      <div className="container mx-auto animatepartner">
         <div className="mx-auto lg:max-w-screen-lg lg:px-20">
           {FAQS.map(({ title, desc }, key) => (
             <Accordion

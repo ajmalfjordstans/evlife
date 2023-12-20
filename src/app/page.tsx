@@ -10,7 +10,6 @@ import Faq from "./faq";
 import About from "./about";
 import Products from "./products";
 import Partner from "./partner";
-import ScrollAnimation from "@/components/scroll-animation";
 
 export default function Campaign() {
   return (

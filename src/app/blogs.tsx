@@ -3,6 +3,8 @@
 import { Typography } from "@material-tailwind/react";
 import BookCard, { ProductCard } from "@/components/product-card";
 import BlogCard from "@/components/blog-card";
+import { useEffect } from "react";
+import applyScrollAnimation from "@/components/scroll-animation";
 
 const BLOGS = [
   {
@@ -20,14 +22,17 @@ const BLOGS = [
 ];
 
 export function Blog() {
+  useEffect(()=>{
+    applyScrollAnimation(".animate",".animate")
+  },[])
   return (
     <section className="px-8 py-28 bg-[#7348A1]">
-      <div className="container mx-auto mb-10">
+      <div className="container mx-auto mb-10 scrollElement triggerElement">
         <Typography variant="h2" color="white" className="mb-2">
           BLOG
         </Typography>
       </div>
-      <div className="container mx-auto grid grid-cols-1 items-start gap-x-6 gap-y-20 md:grid-cols-3 ">
+      <div className="container mx-auto grid grid-cols-1 items-start gap-x-6 gap-y-20 md:grid-cols-3 animate">
         {BLOGS.map((props, key) => (
           <BlogCard key={key} {...props}/>
         ))}

@@ -1,5 +1,5 @@
 'use client';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Card,
   CardHeader,
@@ -11,15 +11,20 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 import Faq from "./faq";
+import applyScrollAnimation from "@/components/scroll-animation";
 
 
 export default function Partner() {
   const [open, setOpen] = useState(1);
+  const handleOpen = (value: number) => setOpen(open === value ? 0 : value);
 
-  const handleOpen = (value : number) => setOpen(open === value ? 0 : value);
+  useEffect(() => {
+    applyScrollAnimation(".animatepartner", ".animatepartner")
+  }, [])
+
   return (
     <section className="px-8 pt-20">
-      <div className="container mx-auto flex justify-center gap-10 flex-col">
+      <div className="container mx-auto flex justify-center gap-10 flex-col md:flex-row ">
         <div>
           <div>
 
@@ -27,7 +32,7 @@ export default function Partner() {
           <a href="/partner">
             <Card
               shadow={false}
-              className="relative grid h-[25rem] w-full max-w-[28rem] items-end justify-center overflow-hidden text-center hover:cursor-pointer mx-auto"
+              className="relative grid h-[25rem] w-full max-w-[28rem] items-end justify-center overflow-hidden text-center hover:cursor-pointer mx-auto animatepartner"
             >
               <CardHeader
                 floated={false}
@@ -50,7 +55,7 @@ export default function Partner() {
             </Card>
           </a>
         </div>
-        <Faq/>
+        <Faq />
         {/* <div className="w-full md:w-[50%]">
           <Typography
             variant="h3"
