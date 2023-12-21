@@ -11,17 +11,17 @@ import Image from "next/image";
 const INDUSTRIES = [
   {
     name: "Parking Space",
-    image: "/image/ev/agriculture.jpg",
+    image: "/image/ev/parking.jpg",
     url: "/products/parkingspace/"
   },
   {
     name: "Apartments & Home",
-    image: "/image/ev/energy.jpg",
-    url: "/products/apartments&home/"
+    image: "/image/ev/home.jpg",
+    url: "/products/apartmentsandhome/"
   },
   {
     name: "Workplace",
-    image: "/image/ev/charging.jpg",
+    image: "/image/ev/workplace.jpg",
     url: "/products/workplace/"
   },
 ]
@@ -35,7 +35,7 @@ export default function IndustryShop() {
         </Typography>
         <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-3 mt-10">
           {INDUSTRIES.map((industry, id) => {
-            console.log(industry);
+            // console.log(industry);
             return (
               <a href={industry.url} key={id}>
                 <Card

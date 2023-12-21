@@ -42,12 +42,12 @@ export default function Industries({ params }: {
   const categoryKey = params.industry;
   if (categoryKey === 'parkingspace') {
     products = INDUSTRY_CATEGORIES.parkingspace
-  } else if (categoryKey === 'apartmentandhome') {
+  } else if (categoryKey === 'apartmentsandhome') {
     products = INDUSTRY_CATEGORIES.apartmentandhome
   } else if (categoryKey === 'workplace') {
     products = INDUSTRY_CATEGORIES.workplace
   }
-  console.log(products as Category);
+  // console.log(products as Category);
   // console.log(INDUSTRY_CATEGORIES);
   // console.log(INDUSTRY_CATEGORIES.energy_solutions);
 
@@ -61,7 +61,7 @@ export default function Industries({ params }: {
           {products?.title}
         </Typography>
         <Typography
-          variant="paragraph"
+          variant="lead"
           className="mt-14"
         >
           {products?.desc}
@@ -69,7 +69,7 @@ export default function Industries({ params }: {
         <div className="grid grid-cols-2 items-start gap-x-6 gap-y-20 md:grid-cols-2 xl:grid-cols-3 mt-20">
           {products?.products.map((props, key) => {
             return (
-              <ProductCard key={key} {...props} category='' desc='' activeTab="industry" />
+              <ProductCard key={key} {...props} category="industry" desc='' activeTab="industry" />
             )
           })}
         </div>

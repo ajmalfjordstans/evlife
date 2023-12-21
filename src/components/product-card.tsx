@@ -32,6 +32,7 @@ export function ProductCard({
 }: ProductCardProps) {
   const router = useRouter()
   const { selectedProduct, setSelectedProduct } = useGlobalContext()
+  // console.log(category);
   const buyButtonHandler = () => {
     const currentSelectedProduct = [{
       img,
@@ -44,8 +45,8 @@ export function ProductCard({
 
     router.push('/products/product');
   }
-
-  return activeTab === category || "industry" ? (
+// category === 'industry' ?
+  return category === activeTab || category === 'industry' ? (
     <Card color="transparent" shadow={false}>
       <CardHeader color="gray" floated={false} className="mx-0 mt-0 mb-6">
         <Image

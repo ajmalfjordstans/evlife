@@ -8,7 +8,7 @@ export default function FloatingWhatsapp() {
   };
 
   return (
-    <div className="fixed bottom-7 right-7 hover:cursor-pointer">
+    <div className="fixed bottom-12 right-7 hover:cursor-pointer">
       <div onClick={() => handleButtonClick()}>
         <Image
           src="/image/ev/whatsapp.png"
