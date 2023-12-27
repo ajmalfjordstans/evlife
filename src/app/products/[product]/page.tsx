@@ -7,11 +7,17 @@ import {
   Button
 } from "@material-tailwind/react";
 import Image from "next/image";
+import { CONST_PRODUCTS } from "@/app/Context/constants";
 
-export default function Product() {
+export default function Product({ params }: {
+  params:
+  {
+    product: number
+  }
+}) {
   const { selectedProduct } = useGlobalContext()
   const productDetails = Array.isArray(selectedProduct) ? selectedProduct[0] : selectedProduct;
-  // console.log("selectedProductDetails", selectedProduct);
+  console.log(CONST_PRODUCTS, params.product);
   return (
     <section className="px-8 pt-20 pb-20">
       <div className="container mx-auto mb-20 text-center flex justify-center">
