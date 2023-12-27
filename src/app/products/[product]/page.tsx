@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
-import { useGlobalContext } from "@/app/Context/store";
 import {
   Typography,
   Button
@@ -15,10 +13,25 @@ export default function Product({ params }: {
     product: number
   }
 }) {
-  const { selectedProduct } = useGlobalContext()
-  // const productDetails = Array.isArray(selectedProduct) ? selectedProduct[0] : selectedProduct;
-  // console.log(CONST_PRODUCTS[params.product-1], params.product);
-  const productDetails = CONST_PRODUCTS[params.product-1]
+  // const productDetails = CONST_PRODUCTS[params.product - 1]
+  let productDetails = {
+    id: 0,
+    img: "",
+    category: "",
+    title: "",
+    desc: "",
+    price: ""
+  }
+  const productId = params.product.toString();
+
+  // Check if productId is a valid positive integer and within the range of CONST_PRODUCTS
+  if (Number.isInteger(parseInt(productId)) && parseInt(productId) > 0 && parseInt(productId) <= CONST_PRODUCTS.length) {
+    productDetails = CONST_PRODUCTS[parseInt(productId) - 1];
+  } else {
+    window.location.href = '/products';
+  }
+
+
   return (
     <section className="px-8 pt-20 pb-20">
       <div className="container mx-auto mb-20 text-center flex justify-center">
