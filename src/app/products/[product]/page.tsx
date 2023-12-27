@@ -16,8 +16,9 @@ export default function Product({ params }: {
   }
 }) {
   const { selectedProduct } = useGlobalContext()
-  const productDetails = Array.isArray(selectedProduct) ? selectedProduct[0] : selectedProduct;
-  console.log(CONST_PRODUCTS, params.product);
+  // const productDetails = Array.isArray(selectedProduct) ? selectedProduct[0] : selectedProduct;
+  // console.log(CONST_PRODUCTS[params.product-1], params.product);
+  const productDetails = CONST_PRODUCTS[params.product-1]
   return (
     <section className="px-8 pt-20 pb-20">
       <div className="container mx-auto mb-20 text-center flex justify-center">

@@ -13,6 +13,7 @@ import {
 import { useGlobalContext } from '@/app/Context/store';
 
 interface ProductCardProps {
+  id?: number;
   img: string;
   title: string;
   desc: string;
@@ -23,6 +24,7 @@ interface ProductCardProps {
 }
 
 export function ProductCard({
+  id,
   img,
   category,
   title,
@@ -43,7 +45,7 @@ export function ProductCard({
     }]
     setSelectedProduct(currentSelectedProduct)
 
-    router.push('/products/product');
+    router.push(`/products/${id}`);
   }
 // category === 'industry' ?
   return category === activeTab || category === 'industry' ? (
@@ -58,7 +60,7 @@ export function ProductCard({
         />
       </CardHeader>
       <CardBody className="p-0 flex justify-between items-center">
-        <div >
+        <div className=''>
           <Typography color="blue" className="mb-2 text-xs !font-semibold">
             {category}
           </Typography>
@@ -79,16 +81,15 @@ export function ProductCard({
               {price}
             </Typography>
           </div>
+          <Button
+            color="blue"
+            ripple={true}
+            className='mt-2'
+            onClick={buyButtonHandler}
+          >
+            View
+          </Button>
         </div>
-        {/* <a href="/products/product"> */}
-        <Button
-          color="blue"
-          ripple={true}
-          onClick={buyButtonHandler}
-        >
-          View
-        </Button>
-        {/* </a> */}
       </CardBody>
     </Card>
   ) : null;
