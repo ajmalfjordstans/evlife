@@ -12,17 +12,17 @@ const INDUSTRIES = [
   {
     name: "Parking Space",
     image: "/image/ev/parking.jpg",
-    url: "/products/parkingspace/"
+    url: "/products/industry/parkingspace/"
   },
   {
     name: "Apartments & Home",
     image: "/image/ev/home.jpg",
-    url: "/products/apartmentsandhome/"
+    url: "/products/industry/apartmentsandhome/"
   },
   {
     name: "Workplace",
     image: "/image/ev/workplace.jpg",
-    url: "/products/workplace/"
+    url: "/products/industry/workplace/"
   },
 ]
 
