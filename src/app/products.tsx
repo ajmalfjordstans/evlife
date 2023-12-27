@@ -9,7 +9,8 @@ import {
   Tab,
 } from "@material-tailwind/react";
 import { ProductCard } from "@/components/product-card";
-import { useGlobalContext } from "./Context/store";
+// import { useGlobalContext } from "./Context/store";
+import { CONST_PRODUCTS } from "./Context/constants";
 import applyScrollAnimation from "@/components/scroll-animation";
 const Categories = [
   "Home GO",
@@ -19,7 +20,8 @@ const Categories = [
 
 export function Products() {
   const [activeTab, setActiveTab] = React.useState("Home GO");
-  const { products } = useGlobalContext()
+  // const { products } = useGlobalContext()
+  const  products  = CONST_PRODUCTS
 
   useEffect(() => {
     applyScrollAnimation(".scrollAnimate", ".scrollAnimate")

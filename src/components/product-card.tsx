@@ -10,8 +10,6 @@ import {
   Button
 } from "@material-tailwind/react";
 
-import { useGlobalContext } from '@/app/Context/store';
-
 interface ProductCardProps {
   id?: number;
   img: string;
@@ -33,21 +31,10 @@ export function ProductCard({
   activeTab,
 }: ProductCardProps) {
   const router = useRouter()
-  const { selectedProduct, setSelectedProduct } = useGlobalContext()
-  // console.log(category);
   const buyButtonHandler = () => {
-    const currentSelectedProduct = [{
-      img,
-      category,
-      title,
-      desc,
-      price,
-    }]
-    setSelectedProduct(currentSelectedProduct)
-
     router.push(`/products/${id}`);
   }
-// category === 'industry' ?
+
   return category === activeTab || category === 'industry' ? (
     <Card color="transparent" shadow={false}>
       <CardHeader color="gray" floated={false} className="mx-0 mt-0 mb-6">

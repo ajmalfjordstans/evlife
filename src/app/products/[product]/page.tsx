@@ -31,7 +31,14 @@ export default function Product({ params }: {
     window.location.href = '/products';
   }
 
+  const handleWhatsappClick = () => {
+    const product = productDetails
+    const message = `Enquiry about ${product.title} ${product.desc} `;
 
+    const whatsappURL = `https://wa.me/917736677477?text=${encodeURIComponent(message)}`;
+    // console.log(whatsappURL);
+    window.location.href = whatsappURL;
+  }
   return (
     <section className="px-8 pt-20 pb-20">
       <div className="container mx-auto mb-20 text-center flex justify-center">
@@ -65,18 +72,19 @@ export default function Product({ params }: {
             <Button
               fullWidth
               variant="outlined"
-              className="mt-6"
-              disabled
+              className="mt-6 text-[#25D366] border-[#25D366] text-[18px]"
+              // disabled
+              onClick={handleWhatsappClick}
             >
-              Add to Cart
+              Ask In Whatsapp
             </Button>
-            <Button
+            {/* <Button
               className="mt-2"
               fullWidth
               disabled
             >
               Buy now
-            </Button>
+            </Button> */}
           </div>
         </div>
 

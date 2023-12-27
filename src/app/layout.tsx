@@ -2,7 +2,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto, Montserrat } from "next/font/google";
 import { Footer, Layout, Navbar } from "@/components";
-import { GlobalContextProvider } from "./Context/store";
 import FloatingWhatsapp from "./whatsapp";
 
 const roboto = Montserrat({
@@ -33,14 +32,12 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/logos/logo-ev-life.png" type="image/png" />
       </head>
       <body className={roboto.className}>
-        <GlobalContextProvider>
           <Layout>
             <Navbar />
             {children}
             <Footer />
             <FloatingWhatsapp />
           </Layout>
-        </GlobalContextProvider>
       </body >
     </html >
   );
