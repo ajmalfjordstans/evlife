@@ -42,7 +42,7 @@ export default function Product({ params }: {
   return (
     <section className="px-8 pt-20 pb-20">
       <div className="container mx-auto mb-20 text-center flex justify-center">
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           <Image
             className="h-96 rounded-lg object-fit object-center shadow-xl shadow-blue-gray-900/50"
             src={productDetails?.img}
@@ -50,7 +50,7 @@ export default function Product({ params }: {
             height={768}
             width={358}
           />
-          <div className="w-[100%] max-w-[350px] text-left pl-14 mt-3">
+          <div className="w-[100%] max-w-[350px] text-left md:pl-14 mt-5 md:mt-3">
             <a href="#">
               <Typography
                 variant="h2"
