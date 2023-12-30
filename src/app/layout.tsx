@@ -13,7 +13,7 @@ const roboto = Montserrat({
 export const metadata: Metadata = {
   title: "EV Life",
   description:
-    "Introducing Tailwind Campaign Page, an all-inclusive and visually captivating campaign landing page template built on the foundation of Tailwind CSS and Material Tailwind.",
+    "Explore our range of EV chargers for home and commercial use. High-quality charging solutions for electric vehicles.",
 };
 
 export default function RootLayout({
@@ -29,15 +29,23 @@ export default function RootLayout({
           data-site="YOUR_DOMAIN_HERE"
           src="https://api.nepcha.com/js/nepcha-analytics.js"
         ></script>
+        <meta property="og:title" content="EV Life" />
+        <meta property="og:description" content="Explore our range of EV chargers for home and commercial use. High-quality charging solutions for electric vehicles." />
+        <meta property="og:image" content="/logos/logo-ev-life.png" />
+        <meta property="og:url" content="https://www.evlife.co.in/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="EV Life" />
+        <meta name="twitter:description" content="Explore our range of EV chargers for home and commercial use. High-quality charging solutions for electric vehicles." />
+        <meta name="twitter:image" content="/logos/logo-ev-life.png" />
         <link rel="shortcut icon" href="/logos/logo-ev-life.png" type="image/png" />
       </head>
       <body className={roboto.className}>
-          <Layout>
-            <Navbar />
-            {children}
-            <Footer />
-            <FloatingWhatsapp />
-          </Layout>
+        <Layout>
+          <Navbar />
+          {children}
+          <Footer />
+          <FloatingWhatsapp />
+        </Layout>
       </body >
     </html >
   );
