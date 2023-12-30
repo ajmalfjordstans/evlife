@@ -3,12 +3,23 @@
 import { Typography, Button, Input } from "@material-tailwind/react";
 import Image from "next/image";
 import Link from "next/link";
+import VideoPlayer from "./common/video-player";
+import { useState } from "react";
 
 const LINKS = ["Product", "About", "Contact", "Blog"];
 const SUB_LINKS = ["Privacy", "Terms"];
 const CURRENT_YEAR = new Date().getFullYear();
 
 export function Footer() {
+  const [showVideo, setShowVideo] = useState(false)
+  const [url, setUrl] = useState("")
+  const handleShowVideo = () => {
+    setShowVideo(!showVideo);
+  }
+  const setVidUrl = (url: string) => {
+    setUrl(url)
+    handleShowVideo()
+  }
   return (
     <footer className="px-8 pt-20 bg-[#7348A1]">
       <div className="mx-auto ">
@@ -41,6 +52,17 @@ export function Footer() {
           {/* <div className="w-[400px]">
             
           </div> */}
+          <div className="flex flex-col">
+            <p className='text-[24px] font-semibold text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-3'>Video Overview</p>
+            {showVideo && url &&
+              <VideoPlayer url={`https://youtu.be/${url}`} onClose={handleShowVideo} />
+            }
+            <p onClick={() => setVidUrl('DtE7gTPdCiQ')} className='xl:text-[18px] sm:text-[16px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-5 hover:cursor-pointer'>Chargers and Solution</p>
+            <p onClick={() => setVidUrl('ZBbDTwgZcEA')} className='xl:text-[18px] sm:text-[16px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-5 hover:cursor-pointer'>Charger Production</p>
+            <p onClick={() => setVidUrl('UPnjTfhT7HI')} className='xl:text-[18px] sm:text-[16px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-5 hover:cursor-pointer'>Charger Installation</p>
+            {/* <iframe id="video_frame" width="560" height="315" src="" frameBorder="0"></iframe> */}
+          </div>
+
           <div className="">
             <p className='text-[24px] font-semibold text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-3'>Quick link</p>
             <Link
