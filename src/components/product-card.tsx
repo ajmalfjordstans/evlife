@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Image from "next/image";
-import { useRouter } from 'next/navigation';
 
 import {
   Typography,
@@ -9,6 +8,7 @@ import {
   CardHeader,
   Button
 } from "@material-tailwind/react";
+import Link from 'next/link';
 
 interface ProductCardProps {
   id?: number;
@@ -30,10 +30,7 @@ export function ProductCard({
   price,
   activeTab,
 }: ProductCardProps) {
-  const router = useRouter()
-  const buyButtonHandler = () => {
-    router.push(`/products/${id}`);
-  }
+ 
 
   return category === activeTab || category === 'industry' ? (
     <Card color="transparent" shadow={false}>
@@ -66,14 +63,24 @@ export function ProductCard({
               {price}
             </Typography>
           </div>
-          <Button
-            color="blue"
-            ripple={true}
-            className='mt-2'
-            onClick={buyButtonHandler}
+          <Link
+            href={{
+              // pathname: `/products/${title}${desc}`,
+              pathname: `/products/charger`,
+              query: {
+                pname: title,
+                pdesc: desc
+              }
+            }}
           >
-            View
-          </Button>
+            <Button
+              color="blue"
+              ripple={true}
+              className='mt-2'
+            >
+              View
+            </Button>
+          </Link>
         </div>
       </CardBody>
     </Card>
