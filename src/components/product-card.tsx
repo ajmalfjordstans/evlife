@@ -51,20 +51,18 @@ export function ProductCard({
           <Typography color="blue" className="mb-2 text-xs !font-semibold">
             {category}
           </Typography>
-          <a href="#">
-            <Typography
-              variant="h5"
-              color="blue-gray"
-              className="mb-3 font-bold normal-case xl:w-64"
-            >
-              {title}
-            </Typography>
-          </a>
+          <Typography
+            variant="h5"
+            color="blue-gray"
+            className="mb-1 font-bold normal-case xl:w-64"
+          >
+            {title}
+          </Typography>
           <Typography className="mb-4 font-normal !text-gray-500">
             {desc}
           </Typography>
           <div className="flex gap-2">
-            <Typography variant="h5" color="red">
+            <Typography variant="h5" color="black">
               {price}
             </Typography>
           </div>

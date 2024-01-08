@@ -104,7 +104,7 @@ export default function ContactForm() {
               type="text"
               id="name"
               name='name'
-              className={`bg-[#7348A1] w-[100%] border-b-[1px] outline-none py-[10px] px-[5px] mt-[5px] ${formErrors.name ? 'border-red-500' : ''
+              className={`bg-inherit w-[100%] border-b-[1px] outline-none py-[10px] px-[5px] mt-[5px] ${formErrors.name ? 'border-red-500' : ''
                 }`}
               onChange={handleInputChange}
               value={formData.name}
@@ -119,7 +119,7 @@ export default function ContactForm() {
               type="mail"
               id="mail"
               name='mail'
-              className={`bg-[#7348A1] w-[100%] border-b-[1px] outline-none py-[10px] px-[5px] mt-[5px] ${formErrors.mail ? 'border-red-500' : ''
+              className={`bg-inherit w-[100%] border-b-[1px] outline-none py-[10px] px-[5px] mt-[5px] ${formErrors.mail ? 'border-red-500' : ''
                 }`}
               onChange={handleInputChange}
               value={formData.mail}
@@ -134,7 +134,7 @@ export default function ContactForm() {
               type="tel"
               id="tel"
               name='tel'
-              className={`bg-[#7348A1] w-[100%] border-b-[1px] outline-none py-[10px] px-[5px] mt-[5px] ${formErrors.mail ? 'border-red-500' : ''
+              className={`bg-inherit w-[100%] border-b-[1px] outline-none py-[10px] px-[5px] mt-[5px] ${formErrors.mail ? 'border-red-500' : ''
                 }`}
               onChange={handleInputChange}
               value={formData.tel}
@@ -149,7 +149,7 @@ export default function ContactForm() {
               id='message'
               name='message'
               placeholder='Your Message Here'
-              className='bg-[#7348A1] w-[100%] border-[1px] outline-none  py-[10px] px-[5px] mt-[10px] '
+              className='bg-inherit w-[100%] border-[1px] outline-none  py-[10px] px-[5px] mt-[10px] '
               // rows="4"
               onChange={handleInputChange}
             />

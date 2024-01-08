@@ -30,9 +30,7 @@ export default function IndustryShop() {
   return (
     <section className="px-8 py-20">
       <div className="container mx-auto text-center">
-        <Typography variant="h1" color="blue-gray" className="mb-2">
-          SHOP BY INDUSTRY
-        </Typography>
+        
         <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-3 mt-10">
           {INDUSTRIES.map((industry, id) => {
             // console.log(industry);
@@ -41,7 +39,6 @@ export default function IndustryShop() {
                 <Card
                   shadow={false}
                   className="relative grid h-[20rem] w-full max-w-[28rem] items-end justify-center overflow-hidden text-center hover:cursor-pointer mx-auto"
-                  
                 >
                   <CardHeader
                     floated={false}

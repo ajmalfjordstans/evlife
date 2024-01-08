@@ -7,10 +7,15 @@ import Image from "next/image"
 export default function ContactPage() {
   return (
     <div className="w-full ">
-      <div className="flex flex-col items-center mt-[50px]">
-        <Typography variant="h1" color="blue-gray" className="mb-2">
-         Contact Us
+      <div className="bg-white px-8 h-[80vh] w-full flex justify-center items-center "
+        style={{ position: "relative", backgroundImage: "url('image/ev/contactus.jpg')", backgroundSize: "cover", backgroundPositionY: "-180px", backgroundRepeat: 'no-repeat' }}
+      >
+        <Typography variant="h1" color="white" className="mb-2">
+          Contact us
         </Typography>
+      </div>
+      <div className="flex flex-col items-center">
+
         {/* <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:w-[700px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mt-20">
           <Image
             className="object-cover w-full rounded-t-lg h-96 md:h-[400px] md:w-[300px] md:rounded-none md:rounded-s-lg"
@@ -31,7 +36,7 @@ export default function ContactPage() {
           </div>
         </div> */}
       </div>
-      <ContactUs/>
+      <ContactUs />
     </div>
   )
 }

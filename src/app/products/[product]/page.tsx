@@ -51,21 +51,19 @@ export default function Product({ params }: {
             width={358}
           />
           <div className="w-[100%] max-w-[350px] text-left md:pl-14 mt-5 md:mt-3">
-            <a href="#">
-              <Typography
-                variant="h2"
-                color="blue-gray"
-                className="mb-3 font-bold normal-case"
-              >
-                {productDetails?.title}
-                {/* PowerPod Home */}
-              </Typography>
-            </a>
+            <Typography
+              variant="h2"
+              color="blue-gray"
+              className="mb-3 font-bold normal-case"
+            >
+              {productDetails?.title}
+              {/* PowerPod Home */}
+            </Typography>
             <Typography className="mb-4 font-normal !text-gray-500">
               {productDetails?.desc}
               {/* 22KW Fast EV Charger */}
             </Typography>
-            <Typography variant="h5" color="red">
+            <Typography variant="h5" color="black">
               {productDetails?.price}
               {/* $550000 */}
             </Typography>
@@ -78,6 +76,10 @@ export default function Product({ params }: {
             >
               Ask In Whatsapp
             </Button>
+
+            <Typography className="mt-10" variant="small">
+              About this product: Chargers are compatible with all Plug-in electric vehicles
+            </Typography>
             {/* <Button
               className="mt-2"
               fullWidth
