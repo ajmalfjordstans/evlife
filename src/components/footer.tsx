@@ -26,7 +26,7 @@ export function Footer() {
         <div className="flex md:justify-evenly md:gap-10 gap-4 flex-wrap lg:flex-nowrap" >
           <div className="flex flex-col items-center">
             <Image
-              src='/logos/evblack.png'
+              src='/logos/evwhite.png'
               alt="ev"
               className="h-32 w-44 max-w-[172px] hover:cursor-pointer mx-auto md:mx-0"
               height={768}

@@ -15,7 +15,7 @@ export default function ProductPage() {
         style={{ position: "relative", backgroundImage: "url('image/ev/productpagebackground.jpg')", backgroundSize: "cover", backgroundPosition: "150px" }}
       >
         <Typography variant="h1" color="white" className="mb-2">
-          SHOP BY INDUSTRY
+          PRODUCTS
         </Typography>
       </div>
       <IndustryShop />
