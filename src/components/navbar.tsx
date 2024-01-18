@@ -76,29 +76,89 @@ export function Navbar() {
 
   return (
     <MTNavbar shadow={true} fullWidth className="border-0 sticky top-0 z-50 ">
-      <div className="bg-[#7348A1] absolute top-0 left-0 w-full flex justify-evenly items-center py-[3px] text-[11px] md:text-[14px] ">
+      <div className="bg-[#7348A1] absolute top-0 left-0 w-full flex justify-evenly items-center py-[3px] text-[11px] md:text-[14px] px-[10px]">
         <span>GET 10% OFF THIS MONTH WHEN YOU TRY OUR SERVICES!</span>
         <span
           className="hover:cursor-pointer px-4 py-1 bg-white rounded-md text-black my-2"
-        ><a href='tel:+917736677477' className='hover:cursor-pointer font-[600]'>+91 773 667 7477</a>
+        ><a href='tel:+917736677477' className='hover:cursor-pointer font-[500]'>+91 773 667 7477</a>
         </span>
       </div>
       <div className="container mx-auto flex items-center justify-between mt-[36px] max-h-[40px]">
-        <a href="/" className="cursor-pointer">
-          <Image
-            src="/logos/logo-ev-life.png"
-            alt=""
-            className="h-[70px] md:h-[80px]"
-            height={50}
-            width={100}
-          />
-        </a>
-        <ul className="ml-10 hidden items-center gap-8 lg:flex mr-[25px]">
-          {NAV_MENU.map(({ name, href }) => (
+        <ul className=" hidden items-center justify-between lg:flex w-full ">
+          {/* {NAV_MENU.map(({ name, href }) => (
             <NavItem key={name} href={href}>
               {name}
             </NavItem>
-          ))}
+          ))} */}
+          <Typography
+            as="a"
+            href="/"
+            target={"_self"}
+            variant="paragraph"
+            color="gray"
+            className="flex items-center gap-2 font-medium text-gray-900"
+          >
+            Home
+          </Typography>
+          <Typography
+            as="a"
+            href="/products"
+            target={"_self"}
+            variant="paragraph"
+            color="gray"
+            className="flex items-center gap-2 font-medium text-gray-900"
+          >
+            Product
+          </Typography>
+          <Typography
+            as="a"
+            href="/about"
+            target={"_self"}
+            variant="paragraph"
+            color="gray"
+            className="flex items-center gap-2 font-medium text-gray-900"
+          >
+            About
+          </Typography>
+          <a href="/" className="cursor-pointer">
+            <Image
+              src="/logos/logo-ev-life.png"
+              alt=""
+              className="h-[70px] md:h-[80px]"
+              height={50}
+              width={100}
+            />
+          </a>
+          <Typography
+            as="a"
+            href="/contact"
+            target={"_self"}
+            variant="paragraph"
+            color="gray"
+            className="flex items-center gap-2 font-medium text-gray-900"
+          >
+            Contact
+          </Typography>
+          <Typography
+            as="a"
+            href="/blog"
+            target={"_self"}
+            variant="paragraph"
+            color="gray"
+            className="flex items-center gap-2 font-medium text-gray-900"
+          >
+            Blog
+          </Typography>
+          <Typography
+            as="a"
+            href="/partner"
+            target={"_self"}
+            variant="paragraph"
+            color="gray"
+            className="flex items-center gap-2 font-medium text-gray-900"
+          >
+            Partner
+          </Typography>
         </ul>
         <IconButton
           variant="text"

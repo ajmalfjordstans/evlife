@@ -41,7 +41,7 @@ export default function RootLayout({
       </head>
       <body className={roboto.className}>
         <Layout>
-          <Navbar />
+          {/* <Navbar /> */}
           {children}
           <Footer />
           <FloatingWhatsapp />

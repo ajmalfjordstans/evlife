@@ -3,17 +3,19 @@
 import { Typography } from "@material-tailwind/react";
 import Partner from "../partner";
 import CarouselFeatures from "../carousel-features";
+import { Navbar } from "@/components";
 
 export default function AboutPage() {
   return (
     <>
-      <div className="bg-white px-8 h-[80vh] w-full flex justify-center items-center "
+      <div className="bg-white px-8 h-[100vh] w-full flex justify-center items-center "
         style={{ position: "relative", backgroundImage: "url('image/ev/aboutus.jpg')", backgroundSize: "cover", backgroundPosition: "150px" }}
       >
         <Typography variant="h1" color="white" className="mb-2">
           About us
         </Typography>
       </div>
+      <Navbar/>
       <div className="w-full container mx-auto">
         <div className="flex flex-col items-center mt-[50px]">
           <Typography

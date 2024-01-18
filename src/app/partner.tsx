@@ -26,10 +26,15 @@ export default function Partner() {
     <section className="px-8 pt-20">
       <div className="container mx-auto flex justify-center gap-10 flex-col md:flex-row ">
         <div>
-          <div>
+          <div className="max-w-[622px] border-l-[12px] border-[#FFD369] pl-[25px]">
+            <p className="text-[24px] font-[600]">B2B Agent Program</p>
+            <p className="text-[16px] mt-[10px]">EV Life provides elite service tailored to ev charger agencies. We go out of our way to ensure safety and quality of your customers. In addition, we offer attractive commissions to help you grow your business.</p>
 
+            <a href="/partner">
+              <div className="bg-[#7348A1] px-[5px] flex text-white py-[3px] rounded-[5px] w-[160px] justify-center mt-[10px]">Register Now</div>
+            </a>
           </div>
-          <a href="/partner">
+          {/* <a href="/partner">
             <Card
               shadow={false}
               className="relative grid h-[25rem] w-full max-w-[28rem] items-end justify-center overflow-hidden text-center hover:cursor-pointer mx-auto animatepartner"
@@ -53,53 +58,9 @@ export default function Partner() {
                 </Typography>
               </CardBody>
             </Card>
-          </a>
+          </a> */}
         </div>
         <Faq />
-        {/* <div className="w-full md:w-[50%]">
-          <Typography
-            variant="h3"
-            className="mb-2"
-          >
-            FAQ
-          </Typography>
-          <Accordion open={open === 1} className="mb-2 rounded-lg border border-blue-gray-100 px-4">
-            <AccordionHeader
-              onClick={() => handleOpen(1)}
-              className={`border-b-0 transition-colors ${open === 1 ? "text-blue-500 hover:!text-blue-700" : ""
-                }`}
-            >
-              FAQ 1
-            </AccordionHeader>
-            <AccordionBody className="pt-0 text-base font-normal">
-              FAQ Description
-            </AccordionBody>
-          </Accordion>
-          <Accordion open={open === 2} className="mb-2 rounded-lg border border-blue-gray-100 px-4">
-            <AccordionHeader
-              onClick={() => handleOpen(2)}
-              className={`border-b-0 transition-colors ${open === 2 ? "text-blue-500 hover:!text-blue-700" : ""
-                }`}
-            >
-              FAQ 2
-            </AccordionHeader>
-            <AccordionBody className="pt-0 text-base font-normal">
-              FAQ Description
-            </AccordionBody>
-          </Accordion>
-          <Accordion open={open === 3} className="rounded-lg border border-blue-gray-100 px-4">
-            <AccordionHeader
-              onClick={() => handleOpen(3)}
-              className={`border-b-0 transition-colors ${open === 3 ? "text-blue-500 hover:!text-blue-700" : ""
-                }`}
-            >
-              FAQ 3
-            </AccordionHeader>
-            <AccordionBody className="pt-0 text-base font-normal">
-              FAQ Description
-            </AccordionBody>
-          </Accordion>
-        </div> */}
       </div>
     </section>
   )

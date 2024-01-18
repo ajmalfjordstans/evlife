@@ -2,10 +2,12 @@
 
 import { Typography } from "@material-tailwind/react"
 import ContactForm from "@/components/contact-form";
+import { Navbar } from "@/components";
 
 export default function PartnerPage() {
   return (
     <>
+      <Navbar />
       <section className="">
         <div className="container mx-auto text-center max-w-[1000px] px-8 pt-20 pb-20">
           <Typography variant="h1" color="blue-gray" className="mb-2">

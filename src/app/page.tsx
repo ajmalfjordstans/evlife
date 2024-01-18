@@ -15,6 +15,7 @@ export default function Campaign() {
   return (
     <div className="bg-blue-gray-100">
       <Hero />
+      <Navbar/>
       <About/>
       <Products/>
       <Blog/>

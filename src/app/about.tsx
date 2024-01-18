@@ -52,7 +52,7 @@ const About = () => {
           <Typography variant="h2" color="blue-gray" className="my-3">
             MEET POWERPOD
           </Typography>
-          <Typography variant="lead" className="!text-gray-800 lg:w-6/12">
+          <Typography variant="lead" className="!text-gray-800 lg:w-6/12 text-[16px]">
             We are passionate about revolutionizing the EV charging experience in India. Our innovative charging solutions are designed to be reliable, durable, and user-friendly, ensuring that EV owners have access to fast and convenient charging wherever they go.
           </Typography>
         </div>

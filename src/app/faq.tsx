@@ -4,27 +4,34 @@ import React from "react";
 import { Typography, Accordion, AccordionHeader, AccordionBody } from "@material-tailwind/react";
 const FAQS = [
   {
-    title: "When does the Back-to-School Campaign start and end?",
-    desc: "Our Back to School Campaign typically begins in late summer, around July or August, and continues through September. Be sure to check our website and promotional materials for specific dates each year.",
+    title: "Immediate availability",
+    desc: "Book online 24/7 with immediate confirmation. With EV Life, you have real time availability and hassle free booking.",
   },
   {
     title:
-      "What types of discounts and offers can I expect during the campaign?",
-    desc: "Our Back to School Campaign typically begins in late summer, around July or August, and continues through September. Be sure to check our website and promotional materials for specific dates each year.",
+      "Priority support",
+    desc: "A professional support team is accessible 24/7 to assist with any day to day needs including on-site requirements. Our services ensure customer satisfaction.",
   },
   {
-    title: "Do you offer any discounts for educators and teachers?",
-    desc: "Our Back to School Campaign typically begins in late summer, around July or August, and continues through September. Be sure to check our website and promotional materials for specific dates each year.",
-  },
-  {
-    title: "Can I shop online during the campaign?",
-    desc: "Our Back to School Campaign typically begins in late summer, around July or August, and continues through September. Be sure to check our website and promotional materials for specific dates each year.",
-  },
-  {
-    title: "What if I can't find a specific book or item I need for school?",
-    desc: "Our Back to School Campaign typically begins in late summer, around July or August, and continues through September. Be sure to check our website and promotional materials for specific dates each year.",
-  },
+    title: "Best service guaranteed",
+    desc: "Make bookings for your clients with assurance of offering them the best possible price and getting the best benefit for you and your client.",
+  }
 ];
+
+function Icon({ id, open }: { id: number, open: number }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className={`${id == open ? "rotate-180" : ""} h-5 w-5 transition-transform`}
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </svg>
+  );
+}
 
 export function Faq() {
   const [open, setOpen] = React.useState(0);
@@ -35,23 +42,37 @@ export function Faq() {
       <div className="container mx-auto animatepartner">
         <div className="mx-auto lg:max-w-screen-lg lg:px-20">
           {FAQS.map(({ title, desc }, key) => (
-            <Accordion
-              key={key}
-              open={open === key + 1}
-              onClick={() => handleOpen(key + 1)}
-            >
-              <AccordionHeader className="text-left text-gray-900">
-                {title}
-              </AccordionHeader>
-              <AccordionBody>
-                <Typography
-                  color="blue-gray"
-                  className="font-normal text-gray-500"
+            <>
+              {/* <Accordion
+                key={key}
+                open={open === key + 1}
+                onClick={() => handleOpen(key + 1)}
+                className="mb-[20px]"
+              >
+                <AccordionHeader className="text-left text-gray-900 bg-[#FFD369] text-[16px] px-[20px] rounded-[10px]">
+                  {title}
+                </AccordionHeader>
+                <AccordionBody>
+                  <Typography
+                    color="blue-gray"
+                    className="font-normal text-gray-500 bg-white"
+                  >
+                    {desc}
+                  </Typography>
+                </AccordionBody>
+              </Accordion> */}
+              <Accordion key={key} icon={<Icon id={key + 1} open={open} />} open={open === key + 1} className="mb-2 border border-blue-gray-100 rounded-[10px] bg-white">
+                <AccordionHeader
+                  onClick={() => handleOpen(key + 1)}
+                  className="text-left text-black bg-[#FFD369] text-[16px] px-[20px] rounded-[10px] font-[500]"
                 >
+                  {title}
+                </AccordionHeader>
+                <AccordionBody className="font-normal text-black bg-white px-[20px] rounded-b-[10px]">
                   {desc}
-                </Typography>
-              </AccordionBody>
-            </Accordion>
+                </AccordionBody>
+              </Accordion>
+            </>
           ))}
         </div>
       </div>

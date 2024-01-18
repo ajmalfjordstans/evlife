@@ -51,7 +51,7 @@ export function Products() {
                 <Tab
                   key={category}
                   value={category}
-                  className={`!font-medium capitalize transition-all duration-300
+                  className={`!font-medium capitalize transition-all duration-300 border-[1px] border-[#7348A1] rounded-lg mr-[3px]
                     ${activeTab === category ? "text-white" : "capitalize"}
                   `}
                   onClick={() => setActiveTab(category)}
