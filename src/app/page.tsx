@@ -13,13 +13,14 @@ import Partner from "./partner";
 
 export default function Campaign() {
   return (
-    <div className="bg-blue-gray-100">
+    // bg-blue-gray-100
+    <div className="bg-[#f5f5dc70]">
       <Hero />
-      <Navbar/>
-      <About/>
-      <Products/>
-      <Blog/>
-      <Partner/>
+      <Navbar />
+      <About />
+      <Products />
+      <Blog />
+      <Partner />
       <CarouselFeatures />
       {/* <GetYourBookFromUs /> */}
       {/* <Faq /> */}

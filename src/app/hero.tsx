@@ -11,10 +11,8 @@ function Hero() {
     gsap.fromTo(".triggerRef", { y: 150, opacity: 0, delay: 0 }, { y: 0, opacity: 1, delay: 0, duration: 1 })
   }, [])
   return (
-    <header className="bg-white px-8"
-      style={{ position: "relative", backgroundImage: "url('image/ev/hero.jpg')", backgroundSize: "cover", backgroundPosition: "150px" }}
-    >
-      <div className="container mx-auto grid h-full min-h-[100vh] w-full grid-cols-1 place-items-center gap-y-10 lg:grid-cols-2" >
+    <header className="bg-landing bg-cover bg-center bg-bottom px-8 ">
+      <div className="container mx-auto grid h-full min-h-[100vh] w-full grid-cols-1 place-items-center gap-y-10 lg:grid-cols-2 font-nunito" >
         <div className="row-start-1 lg:row-auto text-[white] triggerRef" >
           <p className='xl:text-[18px] sm:text-[16px]  xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-[60px] md:mt-0' >EV LIFE - ENABLING GREENER TRANSPORT SOLUTIONS</p>
           <p className='xl:text-[48px] sm:text-[38px] text-[32px] font-[600] xl:tracking-[1.104px] sm:tracking-[0.874px] xl:leading-[57.6px] md:leading-[45px] source py-[20px]' >Charge your<br /> car anywhere, anytime</p>

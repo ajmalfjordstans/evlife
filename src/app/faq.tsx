@@ -34,7 +34,7 @@ function Icon({ id, open }: { id: number, open: number }) {
 }
 
 export function Faq() {
-  const [open, setOpen] = React.useState(0);
+  const [open, setOpen] = React.useState(1);
   const handleOpen = (value: number) => setOpen(open === value ? 0 : value);
 
   return (
@@ -42,37 +42,17 @@ export function Faq() {
       <div className="container mx-auto animatepartner">
         <div className="mx-auto lg:max-w-screen-lg lg:px-20">
           {FAQS.map(({ title, desc }, key) => (
-            <>
-              {/* <Accordion
-                key={key}
-                open={open === key + 1}
+            <Accordion key={key} icon={<Icon id={key + 1} open={open} />} open={open === key + 1} className="mb-2 border border-blue-gray-100 rounded-[10px] bg-white">
+              <AccordionHeader
                 onClick={() => handleOpen(key + 1)}
-                className="mb-[20px]"
+                className="text-left text-white hover:text-white bg-[#6B414B] text-[16px] px-[20px] rounded-[10px] font-[500] font-nunito"
               >
-                <AccordionHeader className="text-left text-gray-900 bg-[#FFD369] text-[16px] px-[20px] rounded-[10px]">
-                  {title}
-                </AccordionHeader>
-                <AccordionBody>
-                  <Typography
-                    color="blue-gray"
-                    className="font-normal text-gray-500 bg-white"
-                  >
-                    {desc}
-                  </Typography>
-                </AccordionBody>
-              </Accordion> */}
-              <Accordion key={key} icon={<Icon id={key + 1} open={open} />} open={open === key + 1} className="mb-2 border border-blue-gray-100 rounded-[10px] bg-white">
-                <AccordionHeader
-                  onClick={() => handleOpen(key + 1)}
-                  className="text-left text-black bg-[#FFD369] text-[16px] px-[20px] rounded-[10px] font-[500]"
-                >
-                  {title}
-                </AccordionHeader>
-                <AccordionBody className="font-normal text-black bg-white px-[20px] rounded-b-[10px]">
-                  {desc}
-                </AccordionBody>
-              </Accordion>
-            </>
+                {title}
+              </AccordionHeader>
+              <AccordionBody className="font-normal text-black bg-white px-[20px] rounded-b-[10px] font-nunito">
+                {desc}
+              </AccordionBody>
+            </Accordion>
           ))}
         </div>
       </div>

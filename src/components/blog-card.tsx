@@ -40,17 +40,17 @@ export function BlogCard({
             />
           </CardHeader>
           <CardBody className="p-0">
-            <Typography color="blue" className="mb-2 text-xs !font-semibold">
+            <Typography className="mb-2 text-xs !font-semibold font-nunito text-white">
               {date}
             </Typography>
               <Typography
                 variant="h5"
                 color="white"
-                className="mb-3 font-bold normal-case xl:w-64"
+                className="mb-3 font-bold normal-case xl:w-64 font-nunito"
               >
                 {title}
               </Typography>
-            <Typography className="mb-4 font-normal !text-white">
+            <Typography className="mb-4 font-normal !text-white font-nunito">
               {desc}
             </Typography>
             <div className="flex gap-2">

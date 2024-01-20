@@ -14,25 +14,31 @@ import applyScrollAnimation from "@/components/scroll-animation";
 
 const CATEGORIES = [
   {
-    img: "/image/ev/Icons/smart.png",
+    // img: "",
+    bg: '/image/ev/warranty.jpg',
+    title: "2 Year Warranty",
+    desc: "Designed and Engineered by experts. \n Made with❤️in India \n Authorized distributor of  RIOD",
+  },
+  {
+    // img: "/image/ev/Icons/smart.png",
     bg: '/image/ev/smart.jpg',
     title: "SMART",
     desc: "Advanced Connectivity",
   },
   {
-    img: "/image/ev/Icons/fast.png",
+    // img: "/image/ev/Icons/fast.png",
     bg: '/image/ev/fast.jpg',
     title: "FAST",
     desc: "upto 22kW Charging",
   },
   {
-    img: "/image/ev/Icons/safe.png",
+    // img: "/image/ev/Icons/safe.png",
     bg: '/image/ev/safe.jpg',
     title: "SAFE",
     desc: "Advanced Protections",
   },
   {
-    img: "/image/ev/Icons/compatible.png",
+    // img: "/image/ev/Icons/compatible.png",
     bg: '/image/ev/compatible.jpg',
     title: "Compatible",
     desc: "All 2, 3, 4 Wheelers",
@@ -48,21 +54,22 @@ const About = () => {
   return (
     <section className="container mx-auto px-8 pb-20 pt-20 lg:pt-0">
       <div className="">
-        <div className="mb-20 mt-10  grid place-items-center text-center scrollElement triggerElement">
-          <Typography variant="h2" color="blue-gray" className="my-3">
+        <div className="mb-20 mt-10 grid place-items-center text-center scrollElement triggerElement">
+          <Typography variant="h2" color="blue-gray" className="my-3 font-nunito">
             MEET POWERPOD
           </Typography>
-          <Typography variant="lead" className="!text-gray-800 lg:w-6/12 text-[16px]">
+          <Typography variant="lead" className="!text-gray-800 lg:w-6/12 text-[16px] font-nunito">
             We are passionate about revolutionizing the EV charging experience in India. Our innovative charging solutions are designed to be reliable, durable, and user-friendly, ensuring that EV owners have access to fast and convenient charging wherever they go.
           </Typography>
         </div>
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 scrollElement2 triggerElement2">
-          <Card
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 scrollElement2 triggerElement2">
+          {/* <Card
             color="blue"
             className="relative grid h-full w-full place-items-center overflow-hidden text-center"
             style={{ position: "relative", backgroundImage: "url('image/ev/warranty.jpg')", backgroundSize: "cover" }}
           >
-            <div className="absolute inset-0 h-full w-full bg-gray-900/75" />
+           bg-gray-900/75  
+            <div className="absolute inset-0 h-full w-full bg-gray-900/75 " />
             <CardBody className="relative w-full">
               <Typography variant="h1" className="mt-9" color="white">
                 2
@@ -89,20 +96,20 @@ const About = () => {
                 Authorized distributor of  RIOD
               </Typography>
             </CardBody>
-          </Card>
-          <div className="col-span-1 flex flex-col gap-6">
-            {CATEGORIES.slice(0, 2).map((props, key) => (
+          </Card> */}
+          {CATEGORIES.map((props, key) => (
+            <CategoryCard key={key} {...props} />
+          ))}
+          {/* <div className="col-span-1 flex flex-col gap-6">
+          </div> */}
+          {/* <div className="col-span-1 flex flex-col gap-6">
+            {CATEGORIES.slice(3, 5).map((props, key) => (
               <CategoryCard key={key} {...props} />
             ))}
-          </div>
-          <div className="col-span-1 flex flex-col gap-6">
-            {CATEGORIES.slice(2, 4).map((props, key) => (
-              <CategoryCard key={key} {...props} />
-            ))}
-          </div>
+          </div> */}
         </div>
       </div>
-    </section>
+    </section >
   )
 }
 

@@ -45,21 +45,21 @@ export function ProductCard({
       </CardHeader>
       <CardBody className="p-0 flex justify-between items-center">
         <div className=''>
-          <Typography color="blue" className="mb-2 text-xs !font-semibold">
+          <Typography color="blue" className="mb-2 text-xs !font-semibold text-[#7E48A1] font-nunito">
             {category}
           </Typography>
           <Typography
             variant="h5"
             color="blue-gray"
-            className="mb-1 font-bold normal-case xl:w-64"
+            className="mb-1 font-bold normal-case xl:w-64 font-nunito"
           >
             {title}
           </Typography>
-          <Typography className="mb-4 font-normal !text-gray-500">
+          <Typography className="mb-4 font-normal !text-gray-500 font-nunito">
             {desc}
           </Typography>
           <div className="flex gap-2">
-            <Typography variant="h5" color="black">
+            <Typography variant="h5" color="black font-nunito">
               {price}
             </Typography>
           </div>
@@ -74,9 +74,9 @@ export function ProductCard({
             }}
           >
             <Button
-              color="blue"
+              // color="blue"
               ripple={true}
-              className='mt-2'
+              className='mt-2 bg-[#7348a1]'
             >
               View
             </Button>

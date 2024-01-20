@@ -1,12 +1,13 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto, Montserrat } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
 import { Footer, Layout, Navbar } from "@/components";
 import FloatingWhatsapp from "./whatsapp";
 
-const roboto = Montserrat({
+const nunito = Nunito_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700", "900"],
+  variable: "--font-nunito",
   display: "swap",
 });
 
@@ -39,7 +40,7 @@ export default function RootLayout({
         <meta name="twitter:image" content="/logos/logo-ev-life.png" />
         <link rel="shortcut icon" href="/logos/logo-ev-life.png" type="image/png" />
       </head>
-      <body className={roboto.className}>
+      <body className={`${nunito.className} ${nunito.variable}`}>
         <Layout>
           {/* <Navbar /> */}
           {children}

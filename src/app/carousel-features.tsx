@@ -32,18 +32,18 @@ const LOOPS = [
 export function CarouselFeatures() {
   return (
     <div className="px-8 py-40 ">
-      <section className="container mx-auto !rounded-lg bg-[#7348A1] bg-center py-10 lg:px-16">
+      <section className="container mx-auto !rounded-lg bg-[#7348a1] bg-center py-10 lg:px-16">
         <Typography
           variant="h2"
           color="white"
-          className="mb-5 text-xl font-normal text-center"
+          className="mb-5 text-xl font-normal text-center font-nunito"
         >
           ELECTRIC VEHICLES
         </Typography>
         <Typography
           variant="lead"
           color="white"
-          className="mb-5 text-xl font-normal text-center max-w-[357px] mx-auto"
+          className="mb-5 text-xl font-normal text-center max-w-[357px] mx-auto font-nunito"
         >
           Our EV Chargers Are Compatible With All Plug-In Electric Vehicles
         </Typography>

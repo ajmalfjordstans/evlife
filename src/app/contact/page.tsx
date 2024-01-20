@@ -8,8 +8,8 @@ import { Navbar } from "@/components"
 export default function ContactPage() {
   return (
     <div className="w-full ">
-      <div className="bg-white px-8 h-[100vh] w-full flex justify-center items-center "
-        style={{ position: "relative", backgroundImage: "url('image/ev/contactus.jpg')", backgroundSize: "cover", backgroundPositionY: "-180px", backgroundRepeat: 'no-repeat' }}
+      <div className="bg-contact bg-cover bg-center px-8 h-[100vh] w-full flex justify-center items-center "
+        // style={{ position: "relative", backgroundImage: "url('image/ev/contactus.jpg')", backgroundSize: "cover", backgroundPositionY: "-180px", backgroundRepeat: 'no-repeat' }}
       >
         <Typography variant="h1" color="white" className="mb-2">
           Contact us

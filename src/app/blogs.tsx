@@ -35,9 +35,9 @@ export function Blog() {
     applyScrollAnimation(".animate", ".animate")
   }, [])
   return (
-    <section className="px-8 py-28 bg-[#7348A1]">
+    <section className="px-8 py-28 bg-[#4A3360]">
       <div className="container mx-auto mb-10 scrollElement triggerElement text-center">
-        <Typography variant="h2" color="white" className="mb-2">
+        <Typography variant="h2" color="white" className="mb-2 font-nunito">
           BLOG
         </Typography>
       </div>
@@ -49,5 +49,6 @@ export function Blog() {
     </section>
   );
 }
+// [#7348A1]
 
 export default Blog;

@@ -21,7 +21,7 @@ const Categories = [
 export function Products() {
   const [activeTab, setActiveTab] = React.useState("Home GO");
   // const { products } = useGlobalContext()
-  const  products  = CONST_PRODUCTS
+  const products = CONST_PRODUCTS
 
   useEffect(() => {
     applyScrollAnimation(".scrollAnimate", ".scrollAnimate")
@@ -30,12 +30,12 @@ export function Products() {
   return (
     <section className="px-8 pt-20 pb-20">
       <div className="container mx-auto mb-20 text-center scrollAnimate">
-        <Typography variant="h1" color="blue-gray" className="mb-2">
+        <Typography variant="h1" color="blue-gray" className="mb-2 font-nunito">
           Our Products
         </Typography>
         <Typography
           variant="lead"
-          className="mx-auto w-full px-4 !text-gray-500 lg:w-9/12"
+          className="mx-auto w-full px-4 !text-gray-500 lg:w-9/12 font-nunito"
         >
           Check out our EV Chargers
         </Typography>
@@ -51,7 +51,7 @@ export function Products() {
                 <Tab
                   key={category}
                   value={category}
-                  className={`!font-medium capitalize transition-all duration-300 border-[1px] border-[#7348A1] rounded-lg mr-[3px]
+                  className={`!font-medium capitalize transition-all duration-300 border-[1px] border-[#7348A1] rounded-lg mr-[3px] font-nunito
                     ${activeTab === category ? "text-white" : "capitalize"}
                   `}
                   onClick={() => setActiveTab(category)}

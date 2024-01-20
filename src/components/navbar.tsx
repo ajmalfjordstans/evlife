@@ -52,7 +52,7 @@ function NavItem({ children, href }: NavItemProps) {
         target={"_self"}
         variant="paragraph"
         color="gray"
-        className="flex items-center gap-2 font-medium text-gray-900"
+        className="flex items-center gap-2 font-medium text-gray-900 font-nunito"
       >
         {children}
       </Typography>
@@ -76,7 +76,7 @@ export function Navbar() {
 
   return (
     <MTNavbar shadow={true} fullWidth className="border-0 sticky top-0 z-50 ">
-      <div className="bg-[#7348A1] absolute top-0 left-0 w-full flex justify-evenly items-center py-[3px] text-[11px] md:text-[14px] px-[10px]">
+      <div className="bg-[#4A3360] absolute top-0 left-0 w-full flex justify-evenly items-center py-[3px] text-[11px] md:text-[14px] px-[10px]">
         <span>GET 10% OFF THIS MONTH WHEN YOU TRY OUR SERVICES!</span>
         <span
           className="hover:cursor-pointer px-4 py-1 bg-white rounded-md text-black my-2"
@@ -96,7 +96,7 @@ export function Navbar() {
             target={"_self"}
             variant="paragraph"
             color="gray"
-            className="flex items-center gap-2 font-medium text-gray-900"
+            className="flex items-center gap-2 font-medium text-gray-900 font-nunito"
           >
             Home
           </Typography>
@@ -106,7 +106,7 @@ export function Navbar() {
             target={"_self"}
             variant="paragraph"
             color="gray"
-            className="flex items-center gap-2 font-medium text-gray-900"
+            className="flex items-center gap-2 font-medium text-gray-900 font-nunito"
           >
             Product
           </Typography>
@@ -116,7 +116,7 @@ export function Navbar() {
             target={"_self"}
             variant="paragraph"
             color="gray"
-            className="flex items-center gap-2 font-medium text-gray-900"
+            className="flex items-center gap-2 font-medium text-gray-900 font-nunito"
           >
             About
           </Typography>
@@ -124,7 +124,7 @@ export function Navbar() {
             <Image
               src="/logos/logo-ev-life.png"
               alt=""
-              className="h-[70px] md:h-[80px]"
+              className="h-[70px] md:h-[80px] pt-[5px]"
               height={50}
               width={100}
             />
@@ -135,7 +135,7 @@ export function Navbar() {
             target={"_self"}
             variant="paragraph"
             color="gray"
-            className="flex items-center gap-2 font-medium text-gray-900"
+            className="flex items-center gap-2 font-medium text-gray-900 font-nunito"
           >
             Contact
           </Typography>
@@ -145,7 +145,7 @@ export function Navbar() {
             target={"_self"}
             variant="paragraph"
             color="gray"
-            className="flex items-center gap-2 font-medium text-gray-900"
+            className="flex items-center gap-2 font-medium text-gray-900 font-nunito"
           >
             Blog
           </Typography>
@@ -155,7 +155,7 @@ export function Navbar() {
             target={"_self"}
             variant="paragraph"
             color="gray"
-            className="flex items-center gap-2 font-medium text-gray-900"
+            className="flex items-center gap-2 font-medium text-gray-900 font-nunito"
           >
             Partner
           </Typography>
