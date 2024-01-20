@@ -13,8 +13,8 @@ import Partner from "./partner";
 
 export default function Campaign() {
   return (
-    // bg-blue-gray-100
-    <div className="bg-[#f5f5dc70]">
+    // bg-blue-gray-100 bg-[#f5f5dc]
+    <div className="bg-white whole-gradient">
       <Hero />
       <Navbar />
       <About />

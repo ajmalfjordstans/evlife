@@ -35,7 +35,14 @@ export function Blog() {
     applyScrollAnimation(".animate", ".animate")
   }, [])
   return (
-    <section className="px-8 py-28 bg-[#4A3360]">
+    // bg-[#4A3360]
+    <section className="px-8 py-28 "
+      style={{
+        background: 'repeating-radial-gradient(ellipse farthest-corner at center center, #7348A1 0%, #4A3360 100%)',
+        // background: 'linear-gradient(49deg, rgba(74, 51, 96, 1) 0%, rgba(115, 72, 161, 1) 25%, rgba(74, 51, 96, 1) 100%)'
+
+      }}
+    >
       <div className="container mx-auto mb-10 scrollElement triggerElement text-center">
         <Typography variant="h2" color="white" className="mb-2 font-nunito">
           BLOG

@@ -30,7 +30,7 @@ export function BlogCard({
         href={url}
       >
         <Card color="transparent" shadow={false}>
-          <CardHeader color="gray" floated={false} className="mx-0 mt-0 mb-6">
+          <CardHeader color="gray" floated={false} className="mx-0 mt-0 mb-6 shadow-none">
             <Image
               width={768}
               height={768}

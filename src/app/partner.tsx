@@ -26,7 +26,7 @@ export default function Partner() {
     <section className="px-8 pt-20">
       <div className="container mx-auto flex justify-center gap-10 flex-col md:flex-row ">
         <div>
-          <div className="max-w-[622px] border-l-[12px] border-[#743C23] pl-[25px]">
+          <div className="max-w-[622px] border-l-[12px] border-[#6B414B] pl-[25px]">
             <p className="text-[24px] font-[600]">B2B Agent Program</p>
             <p className="text-[16px] mt-[10px]">EV Life provides elite service tailored to ev charger agencies. We go out of our way to ensure safety and quality of your customers. In addition, we offer attractive commissions to help you grow your business.</p>
 

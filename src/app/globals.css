@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --custom-color: #7348a1;
+}
+
+.gradient-element {
+  color: black;
+  background-image: linear-gradient(45deg, #7348a1, #4A3360, #6B414B);
+  background-size: 400%;
+  animation: bg-animation 10s infinite alternate;
+}
+
+.whole-gradient {
+  background: hsla(60, 56%, 91%, 1);
+
+  background: linear-gradient(90deg, hsla(60, 56%, 91%, 1) 0%, hsla(180, 27%, 88%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(60, 56%, 91%, 1) 0%, hsla(180, 27%, 88%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(60, 56%, 91%, 1) 0%, hsla(180, 27%, 88%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F5F5DC", endColorstr="#D7E8E8", GradientType=1 );
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+    /* transform: rotate(0deg); */
+  }
+
+  100% {
+    background-position: right;
+    /* transform: rotate(360deg); */
+  }
+}

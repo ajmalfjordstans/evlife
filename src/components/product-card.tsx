@@ -33,7 +33,7 @@ export function ProductCard({
  
 
   return category === activeTab || category === 'industry' ? (
-    <Card color="transparent" shadow={false}>
+    <Card color="transparent" shadow={false} className='transform transition-transform duration-500 ease-in-out'>
       <CardHeader color="gray" floated={false} className="mx-0 mt-0 mb-6">
         <Image
           width={768}
@@ -59,7 +59,7 @@ export function ProductCard({
             {desc}
           </Typography>
           <div className="flex gap-2">
-            <Typography variant="h5" color="black font-nunito">
+            <Typography variant="h5" className="text-black font-nunito">
               {price}
             </Typography>
           </div>

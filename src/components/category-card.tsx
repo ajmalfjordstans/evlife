@@ -20,7 +20,8 @@ function CategoryCard({
       color='blue'
       style={{ position: "relative", backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
     >
-      <div className="absolute inset-0 h-full w-full bg-gray-900/75" />
+      {/* <div className="absolute inset-0 h-full w-full bg-gray-900/75" /> */}
+      <div className="absolute inset-0 h-full w-full bg-gradient-to-br from-[#4a33607e] to-[#6b414b7a]" />
       {/* <Image
         width={768}
         height={768}
