@@ -42,7 +42,7 @@ export function Faq() {
       <div className="container mx-auto animatepartner">
         <div className="mx-auto lg:max-w-screen-lg lg:px-20">
           {FAQS.map(({ title, desc }, key) => (
-            <Accordion key={key} icon={<Icon id={key + 1} open={open} />} open={open === key + 1} className="mb-2 border border-blue-gray-100 rounded-[10px] bg-white">
+            <Accordion key={key} icon={<Icon id={key + 1} open={open} />} open={open === key + 1} className="mb-2 border-none rounded-[10px] bg-white">
               <AccordionHeader
                 onClick={() => handleOpen(key + 1)}
                 // bg-[#6B414B]
