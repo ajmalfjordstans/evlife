@@ -8,8 +8,8 @@
 
 .gradient-element {
   color: black;
-  background-image: linear-gradient(45deg, #7348a1, #4A3360, #6B414B);
-  background-size: 400%;
+  /* background-image: linear-gradient(45deg, #7348a1, #4A3360, #6B414B); */
+  background-size: 150%;
   animation: bg-animation 10s infinite alternate;
 }
 
@@ -28,11 +28,13 @@
 @keyframes bg-animation {
   0% {
     background-position: left;
+    background-image: linear-gradient(25deg, #7348a1, #4A3360, #6B414B);
     /* transform: rotate(0deg); */
   }
 
   100% {
     background-position: right;
+    background-image: linear-gradient(385deg, #7348a1, #4A3360, #6B414B);
     /* transform: rotate(360deg); */
   }
 }

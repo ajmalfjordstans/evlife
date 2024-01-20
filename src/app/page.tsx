@@ -10,6 +10,7 @@ import Faq from "./faq";
 import About from "./about";
 import Products from "./products";
 import Partner from "./partner";
+import Testimonial from "./testimonial";
 
 export default function Campaign() {
   return (
@@ -21,6 +22,7 @@ export default function Campaign() {
       <Products />
       <Blog />
       <Partner />
+      <Testimonial/>
       <CarouselFeatures />
       {/* <GetYourBookFromUs /> */}
       {/* <Faq /> */}
