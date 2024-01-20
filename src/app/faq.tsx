@@ -45,7 +45,8 @@ export function Faq() {
             <Accordion key={key} icon={<Icon id={key + 1} open={open} />} open={open === key + 1} className="mb-2 border border-blue-gray-100 rounded-[10px] bg-white">
               <AccordionHeader
                 onClick={() => handleOpen(key + 1)}
-                className="text-left text-white hover:text-white bg-[#6B414B] text-[16px] px-[20px] rounded-[10px] font-[500] font-nunito"
+                // bg-[#6B414B]
+                className="text-left text-white hover:text-white bg-[#4A3360] text-[16px] px-[20px] rounded-[10px] font-[500] font-nunito"
               >
                 {title}
               </AccordionHeader>

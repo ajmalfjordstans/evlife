@@ -14,15 +14,15 @@
 }
 
 .whole-gradient {
-  background: hsla(60, 56%, 91%, 1);
+  background: hsla(271, 31%, 29%, 1);
 
-  background: linear-gradient(90deg, hsla(60, 56%, 91%, 1) 0%, hsla(180, 27%, 88%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
+  background: linear-gradient(90deg, hsla(271, 31%, 29%, 1) 0%, hsla(207, 45%, 53%, 1) 12%, hsla(0, 0%, 100%, 1) 69%);
   
-  background: -moz-linear-gradient(90deg, hsla(60, 56%, 91%, 1) 0%, hsla(180, 27%, 88%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(271, 31%, 29%, 1) 0%, hsla(207, 45%, 53%, 1) 12%, hsla(0, 0%, 100%, 1) 69%);
   
-  background: -webkit-linear-gradient(90deg, hsla(60, 56%, 91%, 1) 0%, hsla(180, 27%, 88%, 1) 50%, hsla(0, 0%, 100%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(271, 31%, 29%, 1) 0%, hsla(207, 45%, 53%, 1) 12%, hsla(0, 0%, 100%, 1) 69%);
   
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F5F5DC", endColorstr="#D7E8E8", GradientType=1 );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4A3360", endColorstr="#528DBD", GradientType=1 );
 }
 
 @keyframes bg-animation {
