@@ -31,7 +31,7 @@ function CategoryCard({
       /> */}
       <CardBody className="relative flex flex-col justify-center h-full">
         <div className='flex flex-col items-center'>
-          <Typography variant="h5" className="mb-1" color="white font-nunito">
+          <Typography variant="h5" className="mb-1 font-nunito" color="white ">
             {title}
           </Typography>
           {desc.split('\n').map((line, i) => (

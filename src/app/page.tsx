@@ -15,7 +15,7 @@ import Testimonial from "./testimonial";
 export default function Campaign() {
   return (
     // bg-blue-gray-100 bg-[#f5f5dc]
-    <div className="bg-white whole-gradient">
+    <div className="bg-white ">
       <Hero />
       <Navbar />
       <About />

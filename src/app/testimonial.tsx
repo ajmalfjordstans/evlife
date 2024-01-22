@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Button } from "@material-tailwind/react";
+import Image from 'next/image';
 import axios from 'axios';
 
 interface Review {
@@ -70,26 +71,37 @@ const Testimonial: React.FC = () => {
     },
   ]);
 
-  // useEffect(() => {
-  //   const apiEndpoint = "https://bright-button-dove.cyclic.app/testimonial";
-  //   axios.get<Review[]>(apiEndpoint)
-  //     .then(response => {
-  //       setReviews(response?.data || []);
-  //     })
-  //     .catch(error => {
-  //       console.error('Error:', error.message);
-  //     });
-  // }, []);
+  useEffect(() => {
+    //   const apiEndpoint = "https://bright-button-dove.cyclic.app/testimonial";
+    //   axios.get<Review[]>(apiEndpoint)
+    //     .then(response => {
+    //       setReviews(response?.data || []);
+    //     })
+    //     .catch(error => {
+    //       console.error('Error:', error.message);
+    //     });
+  }, []);
 
   return (
-    <div>
-      <div className="w-full bg-secondary xs:hidden pt-[50px] pb-[70px] px-[2%] black">
-        <div className="container mx-auto flex flex-col md:flex-row flew-wrap justify-between px-[5%] lg:px-0">
+    <div
+      className='my-[40px]'
+      style={{
+        background: `linear-gradient(49deg, rgba(127,194,249,1) 0%, rgba(255, 255, 255, 1) 100%)`
+      }}
+    >
+      <div className="w-full  xs:hidden pt-[30px] pb-[40px] px-[2%] black">
+        <div className="container mx-auto flex flex-col lg:flex-row flew-wrap justify-between px-[5%] lg:px-0">
           <div className="flex justify-center items-center max-w-[257px]">
-            <div className="border-l-[10px] border-[#7952B3] pl-[17px] text-[36px] leading-[40px] md:text-[48px] md:leading-[50px]">What Our Customers Say</div>
+            <div className="border-l-[10px] border-[#7348a1] pl-[17px] text-[36px] leading-[40px] md:text-[48px] md:leading-[50px]">What Our Customers Say</div>
           </div>
-
-          <div className="flex flex-col lg:flex-row w-[100%] md:w-[74%] justify-end items-center">
+          <Image
+            src="/image/ev/google-review.svg"
+            height="320"
+            width='320'
+            alt='google-review'
+            className='p-[30px] mx-auto'
+          />
+          <div className="flex flex-col lg:flex-row w-[100%] md:w-auto justify-end items-center">
             <div className="flex h-full w-[100%] items-center justify-center max-w-[600px] py-[20px] mx-auto">
               <div
                 onClick={() =>

@@ -28,7 +28,11 @@ export function Products() {
     applyScrollAnimation(".scrollAnimate2", ".scrollAnimate2")
   }, [])
   return (
-    <section className="px-8 pt-20 pb-20">
+    <section className="px-8 pt-20 pb-20"
+      style={{
+        background: `radial-gradient(circle, rgba(127,194,249,1) 0%, rgba(255,255,255,1) 100%)`
+      }}
+    >
       <div className="container mx-auto mb-20 text-center scrollAnimate">
         <Typography variant="h1" color="blue-gray" className="mb-2 font-nunito">
           Our Products
@@ -66,7 +70,7 @@ export function Products() {
       {/* <div className="container mx-auto grid grid-cols-1 items-start gap-x-6 gap-y-20 md:grid-cols-2 xl:grid-cols-3 scrollAnimate2"> */}
       <div className="container mx-auto grid grid-cols-1 items-start gap-x-6 gap-y-20 md:grid-cols-2 xl:grid-cols-3 scrollAnimate2 lg:px-[50px]">
         {products.map((props, key) => (
-          <ProductCard key={key} {...props} activeTab={activeTab}/>
+          <ProductCard key={key} {...props} activeTab={activeTab} />
         ))}
       </div>
       {/* <div className="grid place-items-center">
