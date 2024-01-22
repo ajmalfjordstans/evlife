@@ -35,9 +35,9 @@ export function Footer() {
             {/* #7348A1 */}
             <div className="text-left max-w-[500px]">
               <div className="text-center">
-                <p className='xl:text-[16px] sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-[60px] md:mt-0'>ENABLING GREENER TRANSPORT SOLUTIONS</p>
-                <p className='xl:text-[16px] sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-3'>EV charger provider for Kerala and Karnataka.</p>
-                <p className='xl:text-[16px] sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-3'> An authorised distributor of Riod. </p>
+                <p className='sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-[60px] md:mt-0'>ENABLING GREENER TRANSPORT SOLUTIONS</p>
+                <p className='sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-3'>EV charger provider for Kerala and Karnataka.</p>
+                <p className='sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-3'> An authorised distributor of Riod. </p>
               </div>
             </div>
           </div>
@@ -48,9 +48,9 @@ export function Footer() {
             {showVideo && url &&
               <VideoPlayer url={`https://youtu.be/${url}`} onClose={handleShowVideo} />
             }
-            <p onClick={() => setVidUrl('DtE7gTPdCiQ')} className='xl:text-[16px] sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-5 hover:cursor-pointer'>Chargers and Solution</p>
-            <p onClick={() => setVidUrl('ZBbDTwgZcEA')} className='xl:text-[16px] sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-5 hover:cursor-pointer'>Charger Production</p>
-            <p onClick={() => setVidUrl('UPnjTfhT7HI')} className='xl:text-[16px] sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-5 hover:cursor-pointer'>Charger Installation</p>
+            <p onClick={() => setVidUrl('DtE7gTPdCiQ')} className='sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-5 hover:cursor-pointer'>Chargers and Solution</p>
+            <p onClick={() => setVidUrl('ZBbDTwgZcEA')} className='sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-2 hover:cursor-pointer'>Charger Production</p>
+            <p onClick={() => setVidUrl('UPnjTfhT7HI')} className='sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-2 hover:cursor-pointer'>Charger Installation</p>
             {/* <iframe id="video_frame" width="560" height="315" src="" frameBorder="0"></iframe> */}
           </div>
 
@@ -59,27 +59,27 @@ export function Footer() {
             <Link
               href='/contact'
             >
-              <p className='xl:text-[16px] sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-5'>Contact</p>
+              <p className='sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-5'>Contact</p>
             </Link>
             <Link
               href='/products'
             >
-              <p className='xl:text-[16px] sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-3'>Product</p>
+              <p className='sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-2'>Product</p>
             </Link>
             <Link
               href='/about'
             >
-              <p className='xl:text-[16px] sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-3'> About</p>
+              <p className='sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-2'> About</p>
             </Link>
             <Link
               href='/privacy'
             >
-              <p className='xl:text-[16px] sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-3'> Privacy</p>
+              <p className='sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-2'> Privacy</p>
             </Link>
             <Link
               href='/terms'
             >
-              <p className='xl:text-[16px] sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-3'> Terms</p>
+              <p className='sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-2'> Terms</p>
             </Link>
             {/* <ul className="flex items-center">
               {SUB_LINKS.map((link, idx) => (
@@ -101,12 +101,12 @@ export function Footer() {
               <Link
                 href='mailto:info@evlife.co.in'
               >
-                <p className='xl:text-[16px] sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-6'> info@evlife.co.in</p>
+                <p className='sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-6'> info@evlife.co.in</p>
               </Link>
               <Link
                 href='tel:+917736677477'
               >
-                <p className='xl:text-[16px] sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-3'> +91 77366 77477</p>
+                <p className='sm:text-[14px] text-[#FFF] xl:tracking-[2.25px] sm:tracking-[2px] xl:leading-[22.5px] sm:leading-[20px] mt-3'> +91 77366 77477</p>
               </Link>
             </div>
             <div className="flex gap-[10px]">
