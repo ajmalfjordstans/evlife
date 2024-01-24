@@ -31,7 +31,7 @@ const LOOPS = [
 
 export function CarouselFeatures() {
   return (
-    <div className="px-8 pb-40 ">
+    <div className="px-8 py-20 ">
       {/* bg-[#7348a1] */}
       <div className="container mx-auto !rounded-lg  bg-center py-10 lg:px-16 gradient-element border-[1px] border-[#7348a1]">
         <Typography

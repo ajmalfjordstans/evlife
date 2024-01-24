@@ -75,16 +75,10 @@ export function Navbar() {
   }, []);
 
   return (
-    <MTNavbar shadow={true} fullWidth className="border-0 sticky top-0 z-50 ">
-      <div className="bg-[#4A3360] absolute top-0 left-0 w-full flex justify-evenly items-center py-[3px] text-[11px] md:text-[14px] px-[10px]">
-        <span>GET 10% OFF THIS MONTH WHEN YOU TRY OUR SERVICES!</span>
-        <span
-          className="hover:cursor-pointer px-4 py-1 bg-white rounded-md text-black my-2"
-        ><a href='tel:+917736677477' className='hover:cursor-pointer font-[500]'>+91 773 667 7477</a>
-        </span>
-      </div>
-      <div className="container mx-auto flex items-center justify-between mt-[36px] max-h-[40px]">
-        <ul className=" hidden items-center justify-between lg:flex w-full ">
+    <MTNavbar shadow={true} fullWidth className="border-0 sticky top-0 z-50">
+
+      <div className="container mx-auto flex items-center justify-between max-h-[40px] ">
+        <ul className="hidden items-center justify-between lg:flex w-full ">
           {/* {NAV_MENU.map(({ name, href }) => (
             <NavItem key={name} href={href}>
               {name}
@@ -124,7 +118,7 @@ export function Navbar() {
             <Image
               src="/logos/logo-ev-life.png"
               alt=""
-              className="h-[70px] md:h-[80px] pt-[5px]"
+              className=""
               height={50}
               width={100}
             />
@@ -160,6 +154,15 @@ export function Navbar() {
             Partner
           </Typography>
         </ul>
+        <a href="/" className="cursor-pointer lg:hidden">
+          <Image
+            src="/logos/logo-ev-life.png"
+            alt=""
+            className=""
+            height={50}
+            width={100}
+          />
+        </a>
         <IconButton
           variant="text"
           color="gray"

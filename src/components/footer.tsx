@@ -21,7 +21,7 @@ export function Footer() {
     handleShowVideo()
   }
   return (
-    <footer className="px-8 pt-20 bg-[#4A3360]">
+    <footer className="px-8 pt-10 bg-[#4A3360]">
       <div className="mx-auto ">
         <div className="flex md:justify-evenly md:gap-10 gap-4 flex-wrap lg:flex-nowrap" >
           <div className="flex flex-col items-center">

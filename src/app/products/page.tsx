@@ -7,6 +7,7 @@ import { Navbar, Footer } from "@/components";
 import Products from "../products";
 import IndustryShop from "./shop-by-industry";
 import { Typography } from "@material-tailwind/react";
+import Banner from "@/components/banner";
 
 export default function ProductPage() {
   return (
@@ -16,6 +17,7 @@ export default function ProductPage() {
           PRODUCTS
         </Typography>
       </div>
+      <Banner/>
       <Navbar/>
       <IndustryShop />
       <Products />

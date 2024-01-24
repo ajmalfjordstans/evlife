@@ -1,9 +1,10 @@
 'use client';
 
 import { Typography } from "@material-tailwind/react";
-import { ProductCard } from "@/components";
+import { Navbar, ProductCard } from "@/components";
 
 import { INDUSTRY_CATEGORIES } from "@/app/Context/constants";
+import Banner from "@/components/banner";
 
 type Product = {
   title: string;
@@ -52,28 +53,32 @@ export default function Industries({ params }: {
   // console.log(INDUSTRY_CATEGORIES.energy_solutions);
 
   return (
-    <section className="px-8 pt-20 pb-20">
-      <div className="container mx-auto md:px-20">
-        <Typography
-          variant="h3"
-          className="text-center"
-        >
-          {products?.title}
-        </Typography>
-        <Typography
-          variant="lead"
-          className="mt-14"
-        >
-          {products?.desc}
-        </Typography>
-        <div className="grid grid-cols-2 items-start gap-x-6 gap-y-20 md:grid-cols-2 xl:grid-cols-3 mt-20">
-          {products?.products.map((props, key) => {
-            return (
-              <ProductCard key={key} {...props} category="industry" desc='' activeTab="industry" />
-            )
-          })}
+    <>
+      <Banner />
+      <Navbar/>
+      <section className="px-8 pt-20 pb-20">
+        <div className="container mx-auto md:px-20">
+          <Typography
+            variant="h3"
+            className="text-center"
+          >
+            {products?.title}
+          </Typography>
+          <Typography
+            variant="lead"
+            className="mt-14"
+          >
+            {products?.desc}
+          </Typography>
+          <div className="grid grid-cols-2 items-start gap-x-6 gap-y-20 md:grid-cols-2 xl:grid-cols-3 mt-20">
+            {products?.products.map((props, key) => {
+              return (
+                <ProductCard key={key} {...props} category="industry" desc='' activeTab="industry" />
+              )
+            })}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }

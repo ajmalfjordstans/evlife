@@ -45,7 +45,7 @@ export function ProductCard({
       </CardHeader>
       <CardBody className="p-0 flex justify-between items-center">
         <div className=''>
-          <Typography color="blue" className="mb-2 text-xs !font-semibold text-[#7E48A1] font-nunito">
+          <Typography color="blue" className="mb-2 text-xs !font-regular tracking-[1.5%] text-[#7E48A1] font-nunito uppercase">
             {category}
           </Typography>
           <Typography
@@ -55,7 +55,7 @@ export function ProductCard({
           >
             {title}
           </Typography>
-          <Typography className="mb-4 font-normal !text-gray-500 font-nunito">
+          <Typography className="mb-4 font-normal !text-gray-900 font-nunito">
             {desc}
           </Typography>
           <div className="flex gap-2">

@@ -3,10 +3,12 @@
 import { Typography } from "@material-tailwind/react"
 import ContactForm from "@/components/contact-form";
 import { Navbar } from "@/components";
+import Banner from "@/components/banner";
 
 export default function PartnerPage() {
   return (
     <>
+      <Banner />
       <Navbar />
       <section className="">
         <div className="container mx-auto text-center max-w-[1000px] px-8 pt-20 pb-20">

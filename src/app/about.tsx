@@ -13,12 +13,12 @@ import {
 import applyScrollAnimation from "@/components/scroll-animation";
 
 const CATEGORIES = [
-  {
-    // img: "",
-    bg: '/image/ev/warranty.jpg',
-    title: "2 Year Warranty",
-    desc: "Designed and Engineered by experts. \n Made with❤️in India \n Authorized distributor of  RIOD",
-  },
+  // {
+  //   // img: "",
+  //   bg: '/image/ev/warranty.jpg',
+  //   title: "2 Year Warranty",
+  //   desc: "Designed and Engineered by experts. \n Made with❤️in India \n Authorized distributor of  RIOD",
+  // },
   {
     // img: "/image/ev/Icons/smart.png",
     bg: '/image/ev/smart.jpg',
@@ -52,23 +52,20 @@ const About = () => {
     applyScrollAnimation('.scrollElement2', '.triggerElement2')
   }, [])
   return (
-    <section className="container mx-auto px-8 pb-20 pt-20 lg:pt-0">
-      <div className="">
-        <div className="mb-20 mt-10 grid place-items-center text-center scrollElement triggerElement">
-          <Typography variant="h2" color="blue-gray" className="my-3 font-nunito">
+    <section className="container mx-auto px-8 pb-20 pt-20 lg:pt-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="mb-20 mt-10  scrollElement triggerElement">
+          <Typography variant="h2" color="blue-gray" className="my-3 font-montserrat text-[24px] md:text-[36px]">
             MEET POWERPOD
           </Typography>
-          <Typography variant="lead" className="!text-gray-800 lg:w-6/12 text-[16px] font-nunito">
+          <Typography variant="lead" className="!text-gray-800 md:w-6/12 lg:w-[80%] text-[16px] md:text-[18px] font-nunito ">
             We are passionate about revolutionizing the EV charging experience in India. Our innovative charging solutions are designed to be reliable, durable, and user-friendly, ensuring that EV owners have access to fast and convenient charging wherever they go.
           </Typography>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 scrollElement2 triggerElement2">
           {/* <Card
             color="blue"
-            className="relative grid h-full w-full place-items-center overflow-hidden text-center"
+            className="relative grid h-[350px] w-[350px] place-items-center overflow-hidden text-center"
             style={{ position: "relative", backgroundImage: "url('image/ev/warranty.jpg')", backgroundSize: "cover" }}
           >
-           bg-gray-900/75  
             <div className="absolute inset-0 h-full w-full bg-gray-900/75 " />
             <CardBody className="relative w-full">
               <Typography variant="h1" className="mt-9" color="white">
@@ -97,9 +94,14 @@ const About = () => {
               </Typography>
             </CardBody>
           </Card> */}
+        </div>
+        {/*  xl:px-[150px] */}
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-3 scrollElement2 triggerElement2">
+
           {CATEGORIES.map((props, key) => (
             <CategoryCard key={key} {...props} />
           ))}
+
           {/* <div className="col-span-1 flex flex-col gap-6">
           </div> */}
           {/* <div className="col-span-1 flex flex-col gap-6">

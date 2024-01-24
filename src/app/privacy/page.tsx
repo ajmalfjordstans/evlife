@@ -1,11 +1,13 @@
 'use client';
 
 import { Navbar } from "@/components";
+import Banner from "@/components/banner";
 import { Typography } from "@material-tailwind/react";
 
 export default function Privacy() {
   return (
     <>
+      <Banner />
       <Navbar />
       <section className="px-8 pt-20 pb-20">
         <div className="container mx-auto text-center">

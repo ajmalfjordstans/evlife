@@ -10,6 +10,7 @@ const config: Config = withMT({
     extend: {
       fontFamily: {
         nunito: ['var(--font-nunito)'],
+        montserrat: ['var(--font-montserrat)']
       },
       backgroundImage: {
         'landing': "url('/image/ev/hero.jpg')",

@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Nunito_Sans } from "next/font/google";
+import { Nunito_Sans, Montserrat } from "next/font/google";
 import { Footer, Layout, Navbar } from "@/components";
 import FloatingWhatsapp from "./whatsapp";
 
@@ -10,6 +10,11 @@ const nunito = Nunito_Sans({
   variable: "--font-nunito",
   display: "swap",
 });
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+})
 
 export const metadata: Metadata = {
   title: "EV Life",
@@ -40,7 +45,7 @@ export default function RootLayout({
         <meta name="twitter:image" content="/logos/logo-ev-life.png" />
         <link rel="shortcut icon" href="/logos/logo-ev-life.png" type="image/png" />
       </head>
-      <body className={`${nunito.className} ${nunito.variable}`}>
+      <body className={`${nunito.className} ${nunito.variable} ${montserrat.variable}`}>
         <Layout>
           {/* <Navbar /> */}
           {children}

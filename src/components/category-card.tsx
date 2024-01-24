@@ -16,9 +16,8 @@ function CategoryCard({
 
   return (
     <Card
-      className="relative grid h-[16rem] w-full overflow-hidden "
-      color='blue'
-      style={{ position: "relative", backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
+      className="relative grid h-[16rem] w-full overflow-hidden bg-[#83C4F9]"
+      // style={{ position: "relative", backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
     >
       {/* <div className="absolute inset-0 h-full w-full bg-gray-900/75" /> */}
       <div className="absolute inset-0 h-full w-full bg-gradient-to-br from-[#4a33607e] to-[#6b414b7a]" />
@@ -31,7 +30,7 @@ function CategoryCard({
       /> */}
       <CardBody className="relative flex flex-col justify-center h-full">
         <div className='flex flex-col items-center'>
-          <Typography variant="h5" className="mb-1 font-nunito" color="white ">
+          <Typography variant="h5" className="mb-1 font-nunito" color="white">
             {title}
           </Typography>
           {desc.split('\n').map((line, i) => (

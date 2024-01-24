@@ -23,7 +23,7 @@ export default function Partner() {
   }, [])
 
   return (
-    <section className="px-8 pt-20">
+    <section className="px-8 pt-[40px] pb-[40px] md:pt-[100px]">
       <div className="container mx-auto flex justify-center gap-10 flex-col md:flex-row ">
         <div>
           <div className="max-w-[622px] border-l-[12px] border-[#7348a1] pl-[25px]">

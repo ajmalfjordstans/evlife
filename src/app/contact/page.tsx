@@ -4,6 +4,7 @@ import { Typography } from "@material-tailwind/react"
 import ContactUs from "./contact-us"
 import Image from "next/image"
 import { Navbar } from "@/components"
+import Banner from "@/components/banner"
 
 export default function ContactPage() {
   return (
@@ -15,6 +16,7 @@ export default function ContactPage() {
           Contact us
         </Typography>
       </div>
+      <Banner/>
       <Navbar/>
       <div className="flex flex-col items-center">
 

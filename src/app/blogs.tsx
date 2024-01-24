@@ -36,14 +36,14 @@ export function Blog() {
   }, [])
   return (
     // bg-[#4A3360]
-    <section className="px-8 py-28 "
+    <section className="lg:px-[220px] py-20 "
       style={{
         background: 'repeating-radial-gradient(ellipse farthest-corner at center center, #7348A1 0%, #4A3360 100%)',
         // background: 'linear-gradient(49deg, rgba(74, 51, 96, 1) 0%, rgba(115, 72, 161, 1) 25%, rgba(74, 51, 96, 1) 100%)'
 
       }}
     >
-      <div className="container mx-auto mb-10 scrollElement triggerElement text-center">
+      <div className="container mx-auto mb-20 scrollElement triggerElement text-center">
         <Typography variant="h2" color="white" className="mb-2 font-nunito">
           BLOG
         </Typography>

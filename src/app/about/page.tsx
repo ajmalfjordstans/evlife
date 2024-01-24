@@ -4,6 +4,7 @@ import { Typography } from "@material-tailwind/react";
 import Partner from "../partner";
 import CarouselFeatures from "../carousel-features";
 import { Navbar } from "@/components";
+import Banner from "@/components/banner";
 
 export default function AboutPage() {
   return (
@@ -13,7 +14,8 @@ export default function AboutPage() {
           About us
         </Typography>
       </div>
-      <Navbar/>
+      <Banner />
+      <Navbar />
       <div className="w-full container mx-auto">
         <div className="flex flex-col items-center mt-[50px]">
           <Typography
@@ -64,7 +66,9 @@ export default function AboutPage() {
           </div>
         </div>
         <Partner />
-        <CarouselFeatures />
+        <div className="mt-[50px]">
+          <CarouselFeatures />
+        </div>
       </div>
     </>
   )

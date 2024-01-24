@@ -8,6 +8,7 @@ import Image from "next/image";
 import { CONST_PRODUCTS } from "@/app/Context/constants";
 import { useSearchParams } from "next/navigation";
 import { Navbar } from "@/components";
+import Banner from "@/components/banner";
 
 export default function Product() {
   let productDetails = {
@@ -38,6 +39,7 @@ export default function Product() {
 
   return (
     <>
+      <Banner />
       <Navbar />
       <section className="px-8 pt-20 pb-20">
         <div className="container mx-auto mb-20 text-center flex justify-center">
