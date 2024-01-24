@@ -40,7 +40,7 @@ const CATEGORIES = [
   {
     // img: "/image/ev/Icons/compatible.png",
     bg: '/image/ev/compatible.jpg',
-    title: "Compatible",
+    title: "COMPATIBLE",
     desc: "All 2, 3, 4 Wheelers",
   },
 ];
